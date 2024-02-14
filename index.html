@@ -17,6 +17,23 @@
                 extend: {
                     colors: {
                         main_blue: '#da373d',
+                    },
+                    keyframes: {
+                        shake: {
+
+                            '0%': { transform: 'translateX(0px)' },
+                            '25%': { transform: 'translateX(5x)' },
+                            '75%': { transform: 'translateX(-5px)' },
+
+                        },
+                        blinkingColor:{
+                            from: { fill: 'blue;' },
+                            to: { fill: 'red;' }
+                        }
+                    },
+                    animation: {
+                        shake: 'shake 1s linear',
+
                     }
                 }
             }
@@ -60,13 +77,14 @@
 
 <div class="w-full mt-20">
     <div>
-        <div class="sticky z-30 px-8" style="top:30rem">
+        <div class="sticky z-30 px-8" style="top:30rem;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="red"
                  class="w-6 h-9 footer-outside-icon rotate-90">
                 <path d="M2.908 2.067A.978.978 0 0 0 2 3.05V8h6V3.05a.978.978 0 0 0-.908-.983 32.481 32.481 0 0 0-4.184 0ZM12.919 4.722A.98.98 0 0 0 11.968 4H10a1 1 0 0 0-1 1v6.268A2 2 0 0 1 12 13h1a.977.977 0 0 0 .985-1 31.99 31.99 0 0 0-1.066-7.278Z"/>
                 <path d="M11 13a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM2 12V9h6v3a1 1 0 0 1-1 1 2 2 0 1 0-4 0 1 1 0 0 1-1-1Z"/>
                 <path d="M6 13a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/>
             </svg>
+
 
         </div>
         <div>
@@ -81,7 +99,16 @@
                             <strong class="h-10">Vision</strong>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aperiam cumque deserunt
                                 dolore, illo ipsum modi mollitia nam nihil nisi non nulla quis ratione rem similique
-                                tenetur </p>
+                                tenetur
+
+                                Text to make it larger
+                                Text to make it largerText to make it larger
+                                Text to make it larger
+                                Text to make it larger
+                                Text to make it larger
+                                Text to make it larger
+
+                            </p>
                         </div>
 
                     </div>
@@ -113,7 +140,22 @@
                         <strong class="h-10">Misión</strong>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aperiam cumque deserunt
                             dolore, illo ipsum modi mollitia nam nihil nisi non nulla quis ratione rem similique
-                            tenetur </p>
+                            tenetur
+
+                        Text to make it larger
+                            Text to make it largerText to make it larger
+                            Text to make it larger
+                            Text to make it larger
+                            Text to make it larger
+                            Text to make it larger
+
+
+
+                        </p>
+
+
+
+
                     </div>
                 </div>
             </div>
@@ -143,7 +185,15 @@
 
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aperiam cumque deserunt
                         dolore, illo ipsum modi mollitia nam nihil nisi non nulla quis ratione rem similique
-                        tenetur </p>
+                        tenetur
+                        Text to make it larger
+                        Text to make it largerText to make it larger
+                        Text to make it larger
+                        Text to make it larger
+                        Text to make it larger
+                        Text to make it larger
+
+                    </p>
                     </div>
                 </div>
             </div>
@@ -176,7 +226,7 @@
 <script src="/assets/camiones_slider.js"></script>
 
  <script src="assets/main.js"></script>
-<!--<footer class="fixed bottom-0 h-20 left-0 px-12 pt-4 p-2 z-20 w-full lg:px-20 bg-white border-t-4 border-blue-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
+<footer class="sticky top-[100vh] left-0 px-12 pt-4 p-2 z-20 w-full lg:px-20 bg-white border-t-4 border-blue-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
 
 
     <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">2023 <a href="https://flowbite.com/"
@@ -191,6 +241,6 @@
             <a href="mailto:contacto@tgnlogistics.com" class="hover:underline">Contacto: contacto@tgnlogistics.com</a>
         </li>
     </ul>
-</footer>-->
+</footer>
 </body>
 </html>
