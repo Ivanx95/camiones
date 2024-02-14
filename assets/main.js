@@ -63,11 +63,6 @@ let handlers = allTrucks.map(e=> onVisibilityChange(e, ()=>{
 	e.style.fill=("blue");
 	e.classList.add("animate-shake");
 
-	e.addEventListener("animationend", () => {
-		console.log(e.parentElement.style.top);
-		e.parentElement.style.top =e.parentElement.style.top;
-	});
-
 }));
 
 
