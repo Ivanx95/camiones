@@ -78,15 +78,22 @@ if (window.addEventListener) {
 }
 
 
-let travelsCounter = document.querySelector("#travelsCounter");
-let counter=1;
-let intervalCounterID = setInterval(()=>{
-	travelsCounter.innerHTML=counter+"+";
-	counter++;
-	if(counter>200){
-		clearInterval(intervalCounterID);
-	}
-},5);
+
+
+
+function incrementStatus(){
+	let travelsCounter = document.querySelector("#travelsCounter");
+	let counter=1;
+	let intervalCounterID = setInterval(()=>{
+		travelsCounter.innerHTML=counter+"+";
+		counter++;
+		if(counter>200){
+			clearInterval(intervalCounterID);
+		}
+	},5);
+}
+setInterval(incrementStatus,6000)
+incrementStatus();
 // addEventListener('scroll',function onScroll(e) {
 //
 // 	if(window.scrollY+convertRemToPixels(80)>=origOffsetY){
