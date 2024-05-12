@@ -87,7 +87,7 @@ function incrementStatus(){
 	let intervalCounterID = setInterval(()=>{
 		travelsCounter.innerHTML=counter+"+";
 		counter++;
-		if(counter>200){
+		if(counter>500){
 			clearInterval(intervalCounterID);
 		}
 	},5);
