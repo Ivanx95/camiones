@@ -92,7 +92,7 @@ function incrementStatus(){
 		}
 	},5);
 }
-setInterval(incrementStatus,6000)
+setInterval(incrementStatus,5000)
 incrementStatus();
 // addEventListener('scroll',function onScroll(e) {
 //
