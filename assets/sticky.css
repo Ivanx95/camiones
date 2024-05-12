@@ -1,3 +1,14 @@
 .topSticky{
     top:90%;
 }
+
+@keyframes moveShip {
+    from {margin-left: 24rem;}
+    to {margin-left: 0;}
+}
+
+#ship{
+    animation-name: moveShip;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
