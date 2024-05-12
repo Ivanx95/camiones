@@ -4,7 +4,7 @@
 
 @keyframes moveShip {
     from {margin-left: 24rem;}
-    to {margin-left: 0;}
+    to {margin-left: 1rem;}
 }
 
 #ship{
