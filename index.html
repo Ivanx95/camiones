@@ -31,7 +31,7 @@
     <meta name="msapplication-square310x310logo" content="assets/mstile-310x310.png"/>
 
     <link rel="stylesheet" href="assets/camiones_slider.css">
-    
+
     <script src="https://cdn.tailwindcss.com"></script>
     <!--    <script src="assets/speed.js"></script>-->
     <link rel="stylesheet" href="assets/general.css">
@@ -42,29 +42,21 @@
     <meta property="og:type" content="website"/>
 
 
-    <script>
+    <script type="module">
+        import {animations} from './assets/animation.config.mjs';
+
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        main_blue: '#da373d',
+                        main_blue: '#040c4c',
+                        main_orange: '#f5320f'
                     },
-                    keyframes: {
-                        shake: {
-
-                            '0%': {transform: 'translateX(0px)'},
-                            '25%': {transform: 'translateX(5x)'},
-                            '75%': {transform: 'translateX(-5px)'},
-
-                        },
-                        blinkingColor: {
-                            from: {fill: 'blue;'},
-                            to: {fill: 'red;'}
-                        }
-                    },
+                    keyframes: animations,
                     animation: {
                         shake: 'shake 1s linear',
-
+                        fadeIn: 'fadeIn 2s linear',
+                        bounceIn: 'bounceIn 1s linear'
                     }
                 }
             }
@@ -74,6 +66,172 @@
 <body class="m-0 p-0">
 
 
+<nav class="fixed bg-white w-full top-0 left-0 z-[100]">
+    <div class="columns-2">
+        <img class="object-scale-down h-420 w-40 mx-12" src="assets/logo_bueno.png"/>
+        <div class="flex" id="navBarMenu">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a href="#"
+               class="bg-orange-500 px-5 py-6 text-sm font-medium text-white hover:bg-orange-500 hover:text-white"
+               aria-current="page">Inicio</a>
+            <a href="#" class=" px-5 py-6 text-sm font-medium text-gray-400 hover:bg-orange-500 hover:text-white">Nosotros</a>
+            <a href="#" class=" px-5 py-6 text-sm font-medium text-gray-400 hover:bg-orange-500 hover:text-white">Servicios</a>
+            <a href="#" class=" px-5 py-6 text-sm font-medium text-gray-400 hover:bg-orange-500 hover:text-white">Contacto</a>
+        </div>
+    </div>
+
+</nav>
+
+<div class="py-6">
+    <br>
+</div>
+
+<div class="content">
+    <div class="grid md:grid-cols-12 sm:grid-cols-1">
+        <div class="md:col-span-5 sm:col-span-1 text-left ml-12 content-center  animate-fadeIn ">
+            <span class="text-main_blue text-6xl font-bold">
+                Bienvenidos a
+            </span>
+            <br/>
+            <span class="text-main_orange text-6xl font-bold">
+                TGN Logistics
+            </span>
+
+            <br>
+
+            <div class="w-3/4 mt-20">
+                <p class="text-xl text-gray-500 font-semibold">
+                    Empresa líder en soluciones logísticas, especializada en el
+                    transporte seguro.
+                </p>
+
+
+            </div>
+
+            <div class="mt-12 animate-bounceIn ">
+                <button class="font-bold py-4 px-4 rounded bg-main_orange hover:bg-main_blue  text-white">Contactanos
+                </button>
+            </div>
+
+        </div>
+        <div class="md:col-span-7 sm:col-span-1">
+            <img src="assets/camion1.jpeg"/>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="content">
+    <div class="grid md:grid-cols-12 sm:grid-cols-2">
+
+        <div class="bg-main_blue md:col-span-6 sm:col-span-2 text-left pl-6">
+            <div class="p-24">
+                <span class="text-3xl text-white font-bold mt-">Nuestros</span>
+                <br>
+                <span class="text-3xl text-main_orange font-bold mt-">Servicios</span>
+                <br>
+                <br>
+                <p class="text-white text-xl">
+                    Todas nuestras unidades están en cumplimiento de las normas aplicables al servicio público federal,
+                    en tanto que
+                    nuestros operadores son personas capacitadas y comprometidas con el cumplimiento de los objetivos
+                    comunes.
+                </p>
+            </div>
+        </div>
+        <div class="md:col-span-3 sm:col-span-1 flex flex-col gap-y-2">
+
+            <div class="h-1/2 p-6">
+                <div class="bg-gray-100  shadow-lg rounded overflow-hidden h-72">
+                    <div class="items-center flex flex-col">
+                        <div class="bg-main_blue rounded-full w-50">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="150px" height="150px"
+                                 viewBox="0 -8 72 72" id="Layer_1" data-name="Layer 1">
+                                <path d="M55.81,44.35V36.41a3.09,3.09,0,0,0-3.09-3.09h-.81v-29a.8.8,0,0,0-.34-.65l-2-1.29A.77.77,0,0,0,48.41,3v9.32l-.59-1.58a5.42,5.42,0,0,0-5.07-3.53H29.24a5.43,5.43,0,0,0-5.09,3.56l-.56,1.55V3a.77.77,0,0,0-1.19-.64l-2,1.29a.8.8,0,0,0-.34.65v29h-.81a3.09,3.09,0,0,0-3.09,3.09v7.94H14.87a.77.77,0,0,0-.77.77V49.4a.77.77,0,0,0,.77.77H18.2v2a1.55,1.55,0,0,0,1.55,1.54h4.1a1.54,1.54,0,0,0,1.54-1.54v-2H46.61v2a1.54,1.54,0,0,0,1.54,1.54h4.1a1.55,1.55,0,0,0,1.55-1.54v-2h3.33a.77.77,0,0,0,.77-.77V45.12a.77.77,0,0,0-.77-.77ZM24.62,16.63H47.38v7.62H24.62Zm-.53,25.56H21.45A1.46,1.46,0,0,1,20,40.73v0a1.46,1.46,0,0,1,1.46-1.46h2.64a1.46,1.46,0,0,1,1.46,1.46v0A1.46,1.46,0,0,1,24.09,42.19Zm17.16.43H30.75a1.54,1.54,0,0,1-1.55-1.55V31.28a1.54,1.54,0,0,1,1.55-1.54h10.5a1.54,1.54,0,0,1,1.55,1.54v9.79A1.54,1.54,0,0,1,41.25,42.62Zm9.3-.43H47.91a1.46,1.46,0,0,1-1.46-1.46v0a1.46,1.46,0,0,1,1.46-1.46h2.64A1.46,1.46,0,0,1,52,40.69v0A1.46,1.46,0,0,1,50.55,42.19ZM41,35.39H31a.76.76,0,0,1-.77-.76v0a.76.76,0,0,1,.77-.76H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,35.39Zm0-3.09H31a.76.76,0,0,1-.77-.76v0a.76.76,0,0,1,.77-.76H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,32.3Zm0,9.27H31a.76.76,0,0,1-.77-.76v0A.76.76,0,0,1,31,40H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,41.57Zm0-3.09H31a.76.76,0,0,1-.77-.76v0a.76.76,0,0,1,.77-.76H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,38.48Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 items-center text-center">
+                        <div class="font-bold text-2xl mb-2">Servicios</div>
+                        <p class="text-gray-700 text-base font-bold">
+                            Full - Sencillos
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="h-1/2 p-6">
+                <div class="bg-gray-100  shadow-lg rounded overflow-hidden h-72 ">
+                    <div class="items-center flex flex-col">
+                        <div class="bg-main_blue rounded-full w-50 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="150px" height="150px"
+                                 viewBox="-20 -20 72 72" id="Layer_1" data-name="Layer 1"
+                                 style=" transform: scale(2.0);">
+                                <path d="M29.92,16.61l-3-7A1,1,0,0,0,26,9H23V7a1,1,0,0,0-1-1H3A1,1,0,0,0,2,7V24a1,1,0,0,0,1,1H5.14a4,4,0,0,0,7.72,0h6.28a4,4,0,0,0,7.72,0H29a1,1,0,0,0,1-1V17A1,1,0,0,0,29.92,16.61ZM23,11h2.34l2.14,5H23ZM9,26a2,2,0,1,1,2-2A2,2,0,0,1,9,26Zm10.14-3H12.86a4,4,0,0,0-7.72,0H4V8H21V20.56A4,4,0,0,0,19.14,23ZM23,26a2,2,0,1,1,2-2A2,2,0,0,1,23,26Zm5-3H26.86A4,4,0,0,0,23,20V18h5Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 items-center text-center">
+                        <div class="font-bold text-2xl mb-2">Caja</div>
+                        <p class="text-gray-700 text-base font-bold">
+                            Seca - Refrigerada
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="md:col-span-3 sm:col-span-1 flex flex-col gap-y-2">
+
+            <div class="h-1/2 p-6">
+                <div class="bg-gray-100  shadow-lg rounded overflow-hidden h-72">
+                    <div class="items-center flex flex-col">
+                        <div class="bg-main_blue rounded-full w-50">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="150px" height="150px"
+                                 viewBox="0 -8 72 72" id="Layer_1" data-name="Layer 1">
+                                <path d="M55.81,44.35V36.41a3.09,3.09,0,0,0-3.09-3.09h-.81v-29a.8.8,0,0,0-.34-.65l-2-1.29A.77.77,0,0,0,48.41,3v9.32l-.59-1.58a5.42,5.42,0,0,0-5.07-3.53H29.24a5.43,5.43,0,0,0-5.09,3.56l-.56,1.55V3a.77.77,0,0,0-1.19-.64l-2,1.29a.8.8,0,0,0-.34.65v29h-.81a3.09,3.09,0,0,0-3.09,3.09v7.94H14.87a.77.77,0,0,0-.77.77V49.4a.77.77,0,0,0,.77.77H18.2v2a1.55,1.55,0,0,0,1.55,1.54h4.1a1.54,1.54,0,0,0,1.54-1.54v-2H46.61v2a1.54,1.54,0,0,0,1.54,1.54h4.1a1.55,1.55,0,0,0,1.55-1.54v-2h3.33a.77.77,0,0,0,.77-.77V45.12a.77.77,0,0,0-.77-.77ZM24.62,16.63H47.38v7.62H24.62Zm-.53,25.56H21.45A1.46,1.46,0,0,1,20,40.73v0a1.46,1.46,0,0,1,1.46-1.46h2.64a1.46,1.46,0,0,1,1.46,1.46v0A1.46,1.46,0,0,1,24.09,42.19Zm17.16.43H30.75a1.54,1.54,0,0,1-1.55-1.55V31.28a1.54,1.54,0,0,1,1.55-1.54h10.5a1.54,1.54,0,0,1,1.55,1.54v9.79A1.54,1.54,0,0,1,41.25,42.62Zm9.3-.43H47.91a1.46,1.46,0,0,1-1.46-1.46v0a1.46,1.46,0,0,1,1.46-1.46h2.64A1.46,1.46,0,0,1,52,40.69v0A1.46,1.46,0,0,1,50.55,42.19ZM41,35.39H31a.76.76,0,0,1-.77-.76v0a.76.76,0,0,1,.77-.76H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,35.39Zm0-3.09H31a.76.76,0,0,1-.77-.76v0a.76.76,0,0,1,.77-.76H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,32.3Zm0,9.27H31a.76.76,0,0,1-.77-.76v0A.76.76,0,0,1,31,40H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,41.57Zm0-3.09H31a.76.76,0,0,1-.77-.76v0a.76.76,0,0,1,.77-.76H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,38.48Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 items-center text-center ">
+                        <div class="font-bold text-2xl mb-2">Serivicios</div>
+                        <p class="text-gray-700 text-base font-bold">
+                            Consolidación
+                            Desconsolidación
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="h-1/2 p-6">
+                <div class="bg-gray-100  shadow-lg rounded overflow-hidden h-72">
+                    <div class="items-center flex flex-col">
+                        <div class="bg-main_blue rounded-full w-50">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="150px" height="150px"
+                                 viewBox="0 -8 72 72" id="Layer_1" data-name="Layer 1">
+                                <path d="M55.81,44.35V36.41a3.09,3.09,0,0,0-3.09-3.09h-.81v-29a.8.8,0,0,0-.34-.65l-2-1.29A.77.77,0,0,0,48.41,3v9.32l-.59-1.58a5.42,5.42,0,0,0-5.07-3.53H29.24a5.43,5.43,0,0,0-5.09,3.56l-.56,1.55V3a.77.77,0,0,0-1.19-.64l-2,1.29a.8.8,0,0,0-.34.65v29h-.81a3.09,3.09,0,0,0-3.09,3.09v7.94H14.87a.77.77,0,0,0-.77.77V49.4a.77.77,0,0,0,.77.77H18.2v2a1.55,1.55,0,0,0,1.55,1.54h4.1a1.54,1.54,0,0,0,1.54-1.54v-2H46.61v2a1.54,1.54,0,0,0,1.54,1.54h4.1a1.55,1.55,0,0,0,1.55-1.54v-2h3.33a.77.77,0,0,0,.77-.77V45.12a.77.77,0,0,0-.77-.77ZM24.62,16.63H47.38v7.62H24.62Zm-.53,25.56H21.45A1.46,1.46,0,0,1,20,40.73v0a1.46,1.46,0,0,1,1.46-1.46h2.64a1.46,1.46,0,0,1,1.46,1.46v0A1.46,1.46,0,0,1,24.09,42.19Zm17.16.43H30.75a1.54,1.54,0,0,1-1.55-1.55V31.28a1.54,1.54,0,0,1,1.55-1.54h10.5a1.54,1.54,0,0,1,1.55,1.54v9.79A1.54,1.54,0,0,1,41.25,42.62Zm9.3-.43H47.91a1.46,1.46,0,0,1-1.46-1.46v0a1.46,1.46,0,0,1,1.46-1.46h2.64A1.46,1.46,0,0,1,52,40.69v0A1.46,1.46,0,0,1,50.55,42.19ZM41,35.39H31a.76.76,0,0,1-.77-.76v0a.76.76,0,0,1,.77-.76H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,35.39Zm0-3.09H31a.76.76,0,0,1-.77-.76v0a.76.76,0,0,1,.77-.76H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,32.3Zm0,9.27H31a.76.76,0,0,1-.77-.76v0A.76.76,0,0,1,31,40H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,41.57Zm0-3.09H31a.76.76,0,0,1-.77-.76v0a.76.76,0,0,1,.77-.76H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,38.48Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 items-center text-center">
+                        <div class="font-bold text-2xl mb-2">Servicios</div>
+                        <p class="text-gray-700 text-base font-bold">
+                           Locales - Foraneos
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+<!--
 <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
 
 
@@ -103,15 +261,15 @@
                     <dt class="text-base leading-7 text-white">Viajes realizados</dt>
                     <dd id="travelsCounter" class="text-2xl font-bold leading-9 tracking-tight text-white">500+</dd>
                 </div>
-                <!--<div class="flex flex-col-reverse">
+              <div class="flex flex-col-reverse">
                     <dt class="text-base leading-7 text-gray-300">Something</dt>
                     <dd class="text-2xl font-bold leading-9 tracking-tight text-white">40</dd>
-                </div>-->
-            </dl>
-        </div>
-    </div>
+                </div>
 </div>
+</div>
+</div>-->
 
+<!--
 <div class="w-full mt-20 mb-10">
     <div>
         <div class="sticky z-30 px-8 lg:mx-48 topSticky">
@@ -177,7 +335,7 @@
                 </div>
             </div>
         </div>
-        <!-- ... -->
+
     </div>
 
     <div>
@@ -214,7 +372,7 @@
         </div>
     </div>
 </div>
-<!-- ... -->
+
 </div>
 
 
@@ -231,8 +389,8 @@
 
 
 </div>
-<!--
-<div class="mx-auto lg:w-2/4 md:w-3/4 w-3/5">
+ -->
+<div class="mx-auto lg:w-2/4 md:w-3/4 w-3/5 mt-32">
 	
 	<form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
 	<h1 class="text-lg font-bold">Contactanos</h1>
@@ -263,9 +421,9 @@
           </div>
   </form>
 
-</div> -->
+</div>
 
-<script src="assets/camiones_slider.js"></script>
+
 <script src="assets/create_email.js"></script>
 
 <script src="assets/main.js"></script>
@@ -293,11 +451,10 @@
                   stroke-width="100"/>
         </g>
     </g>
-        <rect x="125" y="10" width="80" height="60" rx="15"  style=" fill: blue;"/>
+        <rect x="125" y="10" width="80" height="60" rx="15" style=" fill: blue;"/>
 </svg>
 
 </div>
-
 
 
 <footer class="sticky top-[100vh] left-0 px-12 pt-4 p-2 z-20 w-full lg:px-20 bg-white border-t-4 border-blue-500 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
