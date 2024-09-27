@@ -29,7 +29,7 @@ function isElementInViewport (el) {
 }
 
 
-
+/*
 function onVisibilityChange(el, callback) {
 	var old_visible;
 	return function () {
@@ -78,9 +78,9 @@ if (window.addEventListener) {
 }
 
 
+*/
 
-
-
+/*
 function incrementStatus(){
 	let travelsCounter = document.querySelector("#travelsCounter");
 	let counter=1;
@@ -93,13 +93,31 @@ function incrementStatus(){
 	},5);
 }
 setInterval(incrementStatus,5000)
-incrementStatus();
-// addEventListener('scroll',function onScroll(e) {
-//
-// 	if(window.scrollY+convertRemToPixels(80)>=origOffsetY){
-// 		  trucksIncon.style.fill=("blue");
-// 		}else{
-//
-// 		}
-//
-// });
+incrementStatus();*/
+
+
+let navBarMenu = document.querySelector("#navBarMenu")
+
+let menuOptions = [...navBarMenu.children];
+
+
+let navBarActiveColor = 'bg-orange-500';
+let navBArActiveTextColor = 'text-white';
+let navBarSecoundaryTextColor = 'text-gray-400';
+let firstOption = menuOptions[0];
+
+menuOptions.forEach(e=>{
+	e.addEventListener('click',()=>{
+		setClass(navBarSecoundaryTextColor,firstOption);
+		menuOptions.forEach(e1=>resetClass(navBarActiveColor, e1));
+		setClass(navBarActiveColor,e);
+		menuOptions.forEach(e1=>resetClass(navBArActiveTextColor, e1));
+		setClass(navBArActiveTextColor,e);
+	});
+})
+function setClass(className, e){
+	e.classList.add(className);
+}
+function resetClass(className, e){
+	 e.classList.remove(className);
+}
