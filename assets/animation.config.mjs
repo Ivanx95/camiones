@@ -10,7 +10,10 @@ export const animations = {
         '0%': {opacity: 0},
         '100%': {opacity: 1},
     },
-
+    slideIn :{
+        from: { left: "-300px"},
+        to: {left: 0}
+    },
     blinkingColor: {
         from: {fill: 'blue;'},
         to: {fill: 'red;'}

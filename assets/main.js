@@ -115,9 +115,3 @@ menuOptions.forEach(e=>{
 		setClass(navBArActiveTextColor,e);
 	});
 })
-function setClass(className, e){
-	e.classList.add(className);
-}
-function resetClass(className, e){
-	 e.classList.remove(className);
-}

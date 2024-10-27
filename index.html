@@ -74,8 +74,9 @@
             <a href="#"
                class="bg-orange-500 px-5 py-6 text-sm font-medium text-white hover:bg-orange-500 hover:text-white"
                aria-current="page">Inicio</a>
-            <a href="#" class=" px-5 py-6 text-sm font-medium text-gray-400 hover:bg-orange-500 hover:text-white">Nosotros</a>
-            <a href="#servicios-link" class=" px-5 py-6 text-sm font-medium text-gray-400 hover:bg-orange-500 hover:text-white">Servicios</a>
+            <a href="index_nosotros.html" class=" px-5 py-6 text-sm font-medium text-gray-400 hover:bg-orange-500 hover:text-white">Nosotros</a>
+            <a href="#servicios-link"
+               class=" px-5 py-6 text-sm font-medium text-gray-400 hover:bg-orange-500 hover:text-white">Servicios</a>
             <a href="#" class=" px-5 py-6 text-sm font-medium text-gray-400 hover:bg-orange-500 hover:text-white">Contacto</a>
         </div>
     </div>
@@ -278,7 +279,7 @@
 
     <div class="mx-auto lg:w-2/4 md:w-3/4 w-3/5 mt-32">
 
-        <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <form id="contactForm" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 h-96   ">
             <h1 class="text-lg font-bold">Contactanos</h1>
             <div class="mb-4">
                 <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
@@ -322,12 +323,24 @@ divide-gray-200 rounded-lg shadow dark:text-gray-400
 dark:divide-gray-700 dark:bg-gray-800
 fixed top-20 right-5
 " role="alert">
-    <svg class="w-5 h-5 text-blue-600 dark:text-blue-500 rotate-45" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
-        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 17 8 2L9 1 1 19l8-2Zm0 0V9"/>
+    <svg class="w-5 h-5 text-blue-600 dark:text-blue-500 rotate-45" aria-hidden="true"
+         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="m9 17 8 2L9 1 1 19l8-2Zm0 0V9"/>
     </svg>
-    <div class="ps-4 text-sm font-normal">Message sent successfully.</div>
+    <div class="ps-4 text-sm font-normal">Mensaje enviado correctamente.</div>
 </div>
 
+<div id="successBanner" class="hidden h-full animate-fadeIn">
+    <div class="flex flex-row align-middle h-full items-center" >
+        <span class="text-6xl text-center grow">✅</span>
+        <p class="font-medium mt-24 mb-24 ml-24 mr-12 text-2xl w-1/2">
+            Gracias por ponerte en contacto con nosotros,
+            en brevedad un agente se pondra en contacto.
+
+        </p>
+    </div>
+</div>
 <!--
 <div class="w-full mt-20 mb-10">
     <div>
@@ -451,7 +464,7 @@ fixed top-20 right-5
  -->
 
 
-<script src="assets/create_email.js"></script>
+<script src="assets/create_email.mjs" type="module"></script>
 <script src="assets/main.js"></script>
 <div class="ml-96" id="ship">
     <svg fill="#0000ff" height="50px" width="50px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -490,7 +503,7 @@ fixed top-20 right-5
     </span>
     <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
         <li>
-            <a href="#" class="hover:underline me-4 md:me-6">Sobre nosotros</a>
+            <a href="index_nosotros.html" class="hover:underline me-4 md:me-6">Sobre nosotros</a>
         </li>
 
         <li>
