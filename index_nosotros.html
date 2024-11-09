@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>TGNLogistics LZC</title>
-
+    <link rel="stylesheet" href="assets/sticky.css">
 
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="assets/apple-touch-icon-57x57.png"/>
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/apple-touch-icon-114x114.png"/>
@@ -51,7 +51,8 @@
                         main_orange: '#f5320f'
                     },
                     backgroundImage: {
-                        striped: 'linear-gradient(90deg, #040c4c 85%, rgb(229 231 235 ) 15%)'
+                        striped: 'linear-gradient(90deg, #040c4c 70%, rgb(229 231 235 ) 30%)',
+                        stripedThird: 'linear-gradient(90deg, #040c4c 50%, rgb(229 231 235 ) 50%)'
                     },
                     keyframes: animations,
                     animation: {
@@ -71,12 +72,35 @@
     </script>
 </head>
 <body class="m-0 p-0">
-
+<script src="assets/navbar_behaivior.js" type="module"></script>
 
 <nav class="fixed bg-white w-full top-0 left-0 z-[100]">
-    <div class="columns-2">
-        <img class="object-scale-down h-420 w-40 mx-12" src="assets/logo_bueno.png"/>
-        <div class="flex" id="navBarMenu">
+    <div class="flex flex-row">
+        <img class="object-scale-down w-40 mx-12" src="assets/logo_bueno.png"/>
+        <div class="sm:hidden ml-auto  inline-block align-middle pr-4 pt-2" >
+
+            <div class="hidden absolute w-56 right-16  z-10 mt-2 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu"
+                 id="burguerMenu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                <div class="py-1" role="none">
+                    <svg id="closeBtn" class="ml-auto mr-5  w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6"/>
+                    </svg>
+                    <!-- Active: "bg-gray-100 text-gray-900 outline-none", Not Active: "text-gray-700" -->
+                    <a href="index.html" class="block px-4 py-2 text-sm font-medium text-gray-500 hover:bg-orange-500 hover:text-white" role="menuitem" tabindex="-1" id="menu-item-0">Inicio</a>
+                    <a href="index_nosotros.html" class="block px-4 py-2 text-sm font-medium text-gray-500 hover:bg-orange-500 hover:text-white" role="menuitem" tabindex="-1" id="menu-item-1">Nosotros</a>
+                    <a href="#" class="block px-4 py-2 text-sm font-medium text-gray-500 hover:bg-orange-500 hover:text-white" role="menuitem" tabindex="-1" id="menu-item-2">Servicios</a>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-end" id="burguerBtn">
+                <div class="space-y-2 pr-10">
+                    <div class="w-8 h-0.5 bg-gray-600"></div>
+                    <div class="w-8 h-0.5 bg-gray-600"></div>
+                    <div class="w-8 h-0.5 bg-gray-600"></div>
+                </div>
+            </div>
+        </div>
+        <div class="sm:flex hidden" id="navBarMenu">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
             <a href="index.html"
                class=" px-5 py-6 text-sm font-medium text-gray-500 hover:bg-orange-500 hover:text-white"
@@ -87,11 +111,11 @@
                class=" px-5 py-6 text-sm font-medium text-gray-400 hover:bg-orange-500 hover:text-white">Servicios</a>
             <a href="#" class=" px-5 py-6 text-sm font-medium text-gray-400 hover:bg-orange-500 hover:text-white">Contacto</a>
         </div>
-    </div>
 
+    </div>
 </nav>
 
-<div class="py-6">
+<div class="py-2">
     <br>
 </div>
 
@@ -104,9 +128,9 @@
         <div class="relative md:h-[28rem] h-[34rem] bg-gray-200 lg:mx-12 md:mx-auto mx-auto mt-12 rounded-xl overflow-hidden  w-80 md:w-160 ">
             <div class="absolute animate-slideIn">
                 <div class=" flex flex-col gap-y-3 pt-10 lg:pl-14 md:pl-14 pl-4 pb-12">
-                    <span class="text-5xl text-main_blue font-bold text-left ">NUESTRA </span>
+                    <span class="sm:text-5xl text-4xl text-main_blue font-bold text-left ">NUESTRA </span>
 
-                    <span class="text-5xl text-main_orange font-bold">EMPRESA </span>
+                    <span class="sm:text-5xl text-4xl text-main_orange font-bold">EMPRESA </span>
 
                 </div>
                 <div class="lg:px-16 md:px-6 sm:px-4 px-4 text-justify pb-12 leading-5">
@@ -132,15 +156,15 @@
 
 
 <div class="w-f flex flex-row  mt-24 bg-gray-200 sm:bg-none">
-    <div class="w-3/6 pb-12 sm:bg-striped">
+    <div class="w-3/6 pb-12 lg:bg-striped sm:bg-stripedThird">
 
-        <div class="sm:pl-24 sm:pt-12 sm:pr-12">
-            <div class="sm:flex sm:flex-row sm:gap-x-12 p-4 py-12 sm:p-0 sm:py-0">
-                <div class="object-none sm:w-64 sm:h-64 mb-16 sm:mb-0">
-                    <img src="assets/front_truck.png" alt="" class="sm:w-64 sm:h-64 rounded-xl">
+        <div class="sm:pt-12 mx-auto sm:w-2/3">
+            <div class="lg:flex lg:flex-row lg:gap-x-12 p-4 py-12 sm:p-0 sm:py-0">
+                <div class="object-none  sm:h-64 mb-16 lg:mb-0">
+                    <img src="assets/front_truck.png" alt="" class="sm:w-60 sm:h-64 rounded-xl mx-auto">
                 </div>
 
-                <img src="assets/back_of_truck.png" alt="" class="rounded-xl sm:w-44 sm:h-64 mb-12 sm:mb-0">
+                <img src="assets/back_of_truck.png" alt="" class="rounded-xl sm:w-52 sm:h-64 md:mx-auto mb-12 lg:mb-0">
             </div>
             <div class="w-f sm:pt-12 pt-4 p-4 sm:p-0">
                 <img src="assets/camion_1_1_cut.jpeg" alt="" class="rounded-xl sm:w-full sm:h-64 h-32">
@@ -149,8 +173,8 @@
         </div>
 
     </div>
-    <div class="w-3/6  h-full py-24 sm:pr-24 px-4 sm:px-0 flex flex-col gap-y-4">
-        <span class="text-5xl text-main_blue font-bold text-left ">MISIÓN </span>
+    <div class="w-3/6  h-full py-24 sm:pr-24 px-6 sm:px-0 flex flex-col gap-y-4">
+        <span class="sm:text-5xl text-4xl text-main_blue font-bold text-left ">MISIÓN </span>
         <p class="font-normal text-justify ">
             Nuestra misión es proporcionar soluciones de transporte y
             logistica de alta calidad, garantizando la entrega
@@ -164,7 +188,7 @@
             nuestros clientes
         </p>
 
-        <span class="text-5xl text-main_blue font-bold text-left ">VISIÓN </span>
+        <span class="sm:text-5xl text-4xl text-main_blue font-bold text-left sm:mt-12">VISIÓN </span>
         <p class="font-normal text-justify ">
             Ser líderes en la industria de la logística y el transporte,
             reconocidos por nuestra innovación, excelencia
@@ -194,7 +218,7 @@
 
 <script src="assets/create_email.mjs" type="module"></script>
 <script src="assets/main.js"></script>
-<div class="ml-96" id="ship">
+<div class="mt-10" id="ship">
     <svg fill="#0000ff" height="50px" width="50px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
          xmlns:xlink="http://www.w3.org/1999/xlink"
          viewBox="0 0 512.042 512.042" xml:space="preserve">

@@ -64,26 +64,50 @@
     </script>
 </head>
 <body class="m-0 p-0">
-
+<script src="assets/navbar_behaivior.js" type="module"></script>
 
 <nav class="fixed bg-white w-full top-0 left-0 z-[100]">
-    <div class="columns-2">
-        <img class="object-scale-down h-420 w-40 mx-12" src="assets/logo_bueno.png"/>
-        <div class="flex" id="navBarMenu">
+    <div class="flex flex-row">
+        <img class="object-scale-down w-40 mx-12" src="assets/logo_bueno.png"/>
+        <div class="sm:hidden ml-auto  inline-block align-middle pr-4 pt-2" >
+
+            <div class="hidden absolute w-56 right-16  z-10 mt-2 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu"
+                 id="burguerMenu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                <div class="py-1" role="none">
+                    <svg id="closeBtn" class="ml-auto mr-5  w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6"/>
+                    </svg>
+                    <!-- Active: "bg-gray-100 text-gray-900 outline-none", Not Active: "text-gray-700" -->
+                    <a href="index.html" class="block px-4 py-2 text-sm font-medium text-gray-500 hover:bg-orange-500 hover:text-white" role="menuitem" tabindex="-1" id="menu-item-0">Inicio</a>
+                    <a href="index_nosotros.html" class="block px-4 py-2 text-sm font-medium text-gray-500 hover:bg-orange-500 hover:text-white" role="menuitem" tabindex="-1" id="menu-item-1">Nosotros</a>
+                    <a href="#" class="block px-4 py-2 text-sm font-medium text-gray-500 hover:bg-orange-500 hover:text-white" role="menuitem" tabindex="-1" id="menu-item-2">Servicios</a>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-end" id="burguerBtn">
+                <div class="space-y-2 pr-10">
+                    <div class="w-8 h-0.5 bg-gray-600"></div>
+                    <div class="w-8 h-0.5 bg-gray-600"></div>
+                    <div class="w-8 h-0.5 bg-gray-600"></div>
+                </div>
+            </div>
+        </div>
+        <div class="sm:flex hidden" id="navBarMenu">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            <a href="#"
-               class="bg-orange-500 px-5 py-6 text-sm font-medium text-white hover:bg-orange-500 hover:text-white"
+            <a href="index.html"
+               class=" px-5 py-6 text-sm font-medium text-gray-500 hover:bg-orange-500 hover:text-white"
                aria-current="page">Inicio</a>
-            <a href="index_nosotros.html" class=" px-5 py-6 text-sm font-medium text-gray-400 hover:bg-orange-500 hover:text-white">Nosotros</a>
+            <a href="#"
+               class="bg-orange-500 px-5 py-6 text-sm font-medium text-white hover:bg-orange-500 hover:text-white">Nosotros</a>
             <a href="#servicios-link"
                class=" px-5 py-6 text-sm font-medium text-gray-400 hover:bg-orange-500 hover:text-white">Servicios</a>
             <a href="#" class=" px-5 py-6 text-sm font-medium text-gray-400 hover:bg-orange-500 hover:text-white">Contacto</a>
         </div>
-    </div>
 
+    </div>
 </nav>
 
-<div class="py-6">
+<div class="py-2">
     <br>
 </div>
 
@@ -466,7 +490,7 @@ fixed top-20 right-5
 
 <script src="assets/create_email.mjs" type="module"></script>
 <script src="assets/main.js"></script>
-<div class="ml-96" id="ship">
+<div class="mt-6" id="ship">
     <svg fill="#0000ff" height="50px" width="50px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
          xmlns:xlink="http://www.w3.org/1999/xlink"
          viewBox="0 0 512.042 512.042" xml:space="preserve">
