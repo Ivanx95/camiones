@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="m-0 p-0">
+<html lang="es" class="m-0 p-0">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -42,31 +42,12 @@
     <meta property="og:type" content="website"/>
 
 
-    <script type="module">
-        import {animations} from './assets/animation.config.mjs';
-
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        main_blue: '#040c4c',
-                        main_orange: '#f5320f'
-                    },
-                    keyframes: animations,
-                    animation: {
-                        shake: 'shake 1s linear',
-                        fadeIn: 'fadeIn 2s linear',
-                        bounceIn: 'bounceIn 1s linear'
-                    }
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="./output.css">
 </head>
 <body class="m-0 p-0">
 <script src="assets/navbar_behaivior.js" type="module"></script>
 
-<nav class="fixed bg-white w-full top-0 left-0 z-[100]">
+<nav class="fixed bg-white w-full top-0 left-0 z-[100] ">
     <div class="flex flex-row">
         <img class="object-scale-down w-40 mx-12 " src="assets/logo_bueno.png"/>
         <div class="sm:hidden ml-auto  inline-block align-middle pr-4 pt-2" >
@@ -107,11 +88,11 @@
     </div>
 </nav>
 
-<div class="py-2">
+<div class="md:py-2 py-10">
     <br>
 </div>
 
-<div class="content">
+<div class="content ">
     <div class="grid md:grid-cols-12 sm:grid-cols-1">
         <div class="md:col-span-5 sm:col-span-1 text-left ml-12 content-center  animate-fadeIn ">
             <span class="text-main_blue text-6xl font-bold">
@@ -140,7 +121,7 @@
 
         </div>
         <div class="md:col-span-7 sm:col-span-1">
-            <img src="assets/camion1.jpeg"/>
+            <img src="assets/camion1.jpeg" class="animate-SlideInTop"/>
         </div>
     </div>
 

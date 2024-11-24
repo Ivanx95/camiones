@@ -10,9 +10,57 @@ export const animations = {
         '0%': {opacity: 0},
         '100%': {opacity: 1},
     },
-    slideIn :{
-        from: { left: "-300px"},
+    slideIn: {
+        from: {left: "-300px"},
         to: {left: 0}
+    },
+    fadeSlideIn: {
+        from: {
+            left: "-100px",
+            opacity: 0,
+            position: 'relative'
+        },
+        to: {
+            left: 0,
+            opacity: 1,
+            position: 'relative'
+        }
+    },
+    SlideInTop: {
+        from: {
+            top: "-300px",
+            opacity: 0,
+            position: 'relative'
+        },
+        to: {
+            top: 0,
+            opacity: 1,
+            position: 'relative'
+        }
+    },
+    fadeSlideInTop: {
+        from: {
+            top: "-100px",
+            opacity: 0,
+            position: 'relative'
+        },
+        to: {
+            top: 0,
+            opacity: 1,
+            position: 'relative'
+        }
+    },
+    fadeSlideInBottom: {
+        from: {
+            top: "100px",
+            opacity: 0,
+            position: 'relative'
+        },
+        to: {
+            top: 0,
+            opacity: 1,
+            position: 'relative'
+        }
     },
     blinkingColor: {
         from: {fill: 'blue;'},

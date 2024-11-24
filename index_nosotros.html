@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="m-0 p-0">
+<html lang="es" class="m-0 p-0">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -29,66 +29,55 @@
     <meta name="msapplication-square150x150logo" content="assets/mstile-150x150.png"/>
     <meta name="msapplication-wide310x150logo" content="assets/mstile-310x150.png"/>
     <meta name="msapplication-square310x310logo" content="assets/mstile-310x310.png"/>
-
-
-    <script src="https://cdn.tailwindcss.com"></script>
     <!--    <script src="assets/speed.js"></script>-->
     <meta property="og:site_name" content="TGNLogistics LZC">
     <meta property="og:title" content="Soluciones en logística"/>
 
     <meta property="og:image" itemprop="image" content="assets/camion3.jpeg">
     <meta property="og:type" content="website"/>
+    <link rel="stylesheet" href="./output.css">
 
-
-    <script type="module">
-        import {animations} from './assets/animation.config.mjs';
-
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        main_blue: '#040c4c',
-                        main_orange: '#f5320f'
-                    },
-                    backgroundImage: {
-                        striped: 'linear-gradient(90deg, #040c4c 70%, rgb(229 231 235 ) 30%)',
-                        stripedThird: 'linear-gradient(90deg, #040c4c 50%, rgb(229 231 235 ) 50%)'
-                    },
-                    keyframes: animations,
-                    animation: {
-                        shake: 'shake 1s linear',
-                        fadeIn: 'fadeIn 2s linear',
-                        bounceIn: 'bounceIn 1s linear',
-                        slideIn: 'slideIn .25s linear'
-                    },
-                    spacing: {
-                        '104': '26rem',
-                        '128': '32rem',
-                        '160': '38rem',
-                    }
-                }
-            }
+    <style>
+        html * {
+            margin: 0;
+            padding: 0;
         }
-    </script>
+
+         path:hover {
+             fill:red;
+         }
+    </style>
+
+    </style>
+
 </head>
-<body class="m-0 p-0">
-<script src="assets/navbar_behaivior.js" type="module"></script>
+<body>
+<!--<script src="assets/navbar_behaivior.js" type="module"></script>-->
 
 <nav class="fixed bg-white w-full top-0 left-0 z-[100]">
     <div class="flex flex-row">
         <img class="object-scale-down w-40 mx-12" src="assets/logo_bueno.png"/>
-        <div class="sm:hidden ml-auto  inline-block align-middle pr-4 pt-2" >
+        <div class="sm:hidden ml-auto  inline-block align-middle pr-4 pt-2">
 
-            <div class="hidden absolute w-56 right-16  z-10 mt-2 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu"
+            <div class="hidden absolute w-56 right-16 top-12 z-10  rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                 role="menu"
                  id="burguerMenu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
                 <div class="py-1" role="none">
-                    <svg id="closeBtn" class="ml-auto mr-5  w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6"/>
+                    <svg id="closeBtn" class="ml-auto mr-5  w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M6 18 17.94 6M18 18 6.06 6"/>
                     </svg>
                     <!-- Active: "bg-gray-100 text-gray-900 outline-none", Not Active: "text-gray-700" -->
-                    <a href="index.html" class="block px-4 py-2 text-sm font-medium text-gray-500 hover:bg-orange-500 hover:text-white" role="menuitem" tabindex="-1" id="menu-item-0">Inicio</a>
-                    <a href="index_nosotros.html" class="block px-4 py-2 text-sm font-medium text-gray-500 hover:bg-orange-500 hover:text-white" role="menuitem" tabindex="-1" id="menu-item-1">Nosotros</a>
-                    <a href="#" class="block px-4 py-2 text-sm font-medium text-gray-500 hover:bg-orange-500 hover:text-white" role="menuitem" tabindex="-1" id="menu-item-2">Servicios</a>
+                    <a href="index.html"
+                       class="block px-4 py-2 text-sm font-medium text-gray-500 hover:bg-orange-500 hover:text-white"
+                       role="menuitem" tabindex="-1" id="menu-item-0">Inicio</a>
+                    <a href="index_nosotros.html"
+                       class="block px-4 py-2 text-sm font-medium text-gray-500 hover:bg-orange-500 hover:text-white"
+                       role="menuitem" tabindex="-1" id="menu-item-1">Nosotros</a>
+                    <a href="#"
+                       class="block px-4 py-2 text-sm font-medium text-gray-500 hover:bg-orange-500 hover:text-white"
+                       role="menuitem" tabindex="-1" id="menu-item-2">Servicios</a>
                 </div>
             </div>
 
@@ -115,18 +104,19 @@
     </div>
 </nav>
 
-<div class="py-2">
+
+<div class="py-6">
     <br>
 </div>
 
-<div class="w-full h-[42rem] lg:px-24 lg:py-12 bg-main_blue">
+<div class="w-full h-[42rem] lg:px-24 lg:py-12 bg-main_blue sm:mt-10">
     <div class="relative overflow-hidden h-full block z-10
         bg-[url('assets/container.jpg')]  bg-cover bg-no-repeat bg-center
          before:content-[''] before:absolute before:inset-0 before:block
          before:bg-main_blue
          before:opacity-75 before:z-[-5]">
         <div class="relative md:h-[28rem] h-[34rem] bg-gray-200 lg:mx-12 md:mx-auto mx-auto mt-12 rounded-xl overflow-hidden  w-80 md:w-160 ">
-            <div class="absolute animate-slideIn">
+            <div class="absolute animate-fadeSlideIn">
                 <div class=" flex flex-col gap-y-3 pt-10 lg:pl-14 md:pl-14 pl-4 pb-12">
                     <span class="sm:text-5xl text-4xl text-main_blue font-bold text-left ">NUESTRA </span>
 
@@ -160,21 +150,24 @@
 
         <div class="sm:pt-12 mx-auto sm:w-2/3">
             <div class="lg:flex lg:flex-row lg:gap-x-12 p-4 py-12 sm:p-0 sm:py-0">
-                <div class="object-none  sm:h-64 mb-16 lg:mb-0">
+                <div class="object-none  sm:h-64 mb-16 lg:mb-0 animate-fadeSlideIn">
                     <img src="assets/front_truck.png" alt="" class="sm:w-60 sm:h-64 rounded-xl mx-auto">
                 </div>
 
-                <img src="assets/back_of_truck.png" alt="" class="rounded-xl sm:w-52 sm:h-64 md:mx-auto mb-12 lg:mb-0">
+                <img src="assets/back_of_truck.png" alt=""
+                     class="rounded-xl sm:w-52 sm:h-64 md:mx-auto mb-12 lg:mb-0 animate-fadeSlideInTop">
             </div>
             <div class="w-f sm:pt-12 pt-4 p-4 sm:p-0">
-                <img src="assets/camion_1_1_cut.jpeg" alt="" class="rounded-xl sm:w-full sm:h-64 h-32">
+                <img src="assets/camion_1_1_cut.jpeg" alt=""
+                     class="rounded-xl sm:w-full sm:h-64 h-32  animate-fadeSlideInBottom">
             </div>
 
         </div>
 
     </div>
-    <div class="w-3/6  h-full py-24 sm:pr-24 px-6 sm:px-0 flex flex-col gap-y-4">
-        <span class="sm:text-5xl text-4xl text-main_blue font-bold text-left ">MISIÓN </span>
+    <div class="w-3/6  h-full py-24 sm:pr-24 px-6 sm:px-0 flex flex-col gap-y-4 tracking-tight">
+
+        <span class="sm:text-5xl text-4xl text-main_blue font-bold text-left ">Misión </span>
         <p class="font-normal text-justify ">
             Nuestra misión es proporcionar soluciones de transporte y
             logistica de alta calidad, garantizando la entrega
@@ -188,7 +181,7 @@
             nuestros clientes
         </p>
 
-        <span class="sm:text-5xl text-4xl text-main_blue font-bold text-left sm:mt-12">VISIÓN </span>
+        <span class="sm:text-5xl text-4xl text-main_blue font-bold text-left sm:mt-12">Visión </span>
         <p class="font-normal text-justify ">
             Ser líderes en la industria de la logística y el transporte,
             reconocidos por nuestra innovación, excelencia
@@ -216,11 +209,15 @@
     </defs>
 </svg>
 
-<script src="assets/create_email.mjs" type="module"></script>
+<div class="content">
+
+    <iframe src="assets/mx.html" frameborder="0" class="w-full h-170 overflow-y-hidden">
+
+    </iframe>
+</div>
 <script src="assets/main.js"></script>
 <div class="mt-10" id="ship">
     <svg fill="#0000ff" height="50px" width="50px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-         xmlns:xlink="http://www.w3.org/1999/xlink"
          viewBox="0 0 512.042 512.042" xml:space="preserve">
     <g transform="translate(-1)" x="0">
         <g>
@@ -264,5 +261,6 @@
         </li>
     </ul>
 </footer>
+
 </body>
 </html>
