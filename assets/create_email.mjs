@@ -7,45 +7,43 @@ let sucessBanner = document.querySelector("#successBanner");
 
 let contactForm = document.querySelector("#contactForm");
 
-let nameInputEl =  document.querySelector('#nameInput');
+let nameInputEl = document.querySelector('#nameInput');
 
-let emailInputEl =  document.querySelector('#emailInput');
+let emailInputEl = document.querySelector('#emailInput');
 
-let phoneInputEl =  document.querySelector('#phoneInput');
+let phoneInputEl = document.querySelector('#phoneInput');
 
 
-sendEmailBtn.addEventListener('click',()=>{
+sendEmailBtn.addEventListener('click', () => {
 
-    resetClass('hidden',sucessBanner);
-    resetClass('hidden',successToast);
-    setTimeout(()=>{
-        setClass('hidden',successToast);
-    },5000);
+    resetClass('hidden', sucessBanner);
+    resetClass('hidden', successToast);
+    setTimeout(() => {
+        setClass('hidden', successToast);
+    }, 5000);
 
-    contactForm.innerHTML='';
+    contactForm.innerHTML = '';
     contactForm.append(sucessBanner);
- //sendEmailBtn.disable=true;
- /*fetch("https://my-first-worker.jaisen-95.workers.dev/send", {
-   method: "post",
-   headers: {
-     'Accept': 'application/json',
-     'Content-Type': 'application/json'
-   },
+    sendEmailBtn.disable = true;
+    fetch("https://www.card-points.uk/mail", {
+        method: "post",
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
 
-   //make sure to serialize your JSON body
-   body: JSON.stringify({
+        //make sure to serialize your JSON body
+        body: JSON.stringify({
+            name: nameInputEl.value,
+            email: emailInputEl.value,
+            phone: phoneInputEl.value
 
-     user: {
-	name:nameInputEl.value,
-        email: emailInputEl.value,
-	phone: phoneInputEl.value
-	}
-   })
- })
- .then( (response) => {
-   sendEmailBtn.disable=false;
+        })
+    })
+        .then((response) => {
+            sendEmailBtn.disable = false;
 
- });*/
- 
+        });
+
 
 });
