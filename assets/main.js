@@ -115,3 +115,5 @@ menuOptions.forEach(e=>{
 		setClass(navBArActiveTextColor,e);
 	});
 })
+
+console.log("Hi")
