@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="es" class="m-0 p-0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TGNLogistics LZC</title>
+    <link rel="stylesheet" href="assets/sticky.css">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="assets/apple-touch-icon-57x57.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/apple-touch-icon-114x114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/apple-touch-icon-144x144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="assets/apple-touch-icon-60x60.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="assets/apple-touch-icon-120x120.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="assets/apple-touch-icon-76x76.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="assets/apple-touch-icon-152x152.png"/>
+    <link rel="icon" type="image/png" href="assets/favicon-196x196.png" sizes="196x196"/>
+    <link rel="icon" type="image/png" href="assets/favicon-96x96.png" sizes="96x96"/>
+    <link rel="icon" type="image/png" href="assets/favicon-32x32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="assets/favicon-16x16.png" sizes="16x16"/>
+    <link rel="icon" type="image/png" href="assets/favicon-128.png" sizes="128x128"/>
+    <link rel="stylesheet" href="assets/polygons.css">
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF"/>
+    <meta name="msapplication-TileImage" content="assets/mstile-144x144.png"/>
+    <meta name="msapplication-square70x70logo" content="assets/mstile-70x70.png"/>
+    <meta name="msapplication-square150x150logo" content="assets/mstile-150x150.png"/>
+    <meta name="msapplication-wide310x150logo" content="assets/mstile-310x150.png"/>
+    <meta name="msapplication-square310x310logo" content="assets/mstile-310x310.png"/>
+    <!--    <script src="assets/speed.js"></script>-->
+    <meta property="og:site_name" content="TGNLogistics LZC">
+    <meta property="og:title" content="Soluciones en logística"/>
+
+    <meta property="og:image" itemprop="image" content="assets/camion3.jpeg">
+    <meta property="og:type" content="website"/>
+    <link rel="stylesheet" href="./output.css">
+
+    <style>
+        html * {
+            margin: 0;
+            padding: 0;
+        }
+
+         path:hover {
+             fill:red;
+         }
+    </style>
+
+    </style>
+
+</head>
+<body>
+<script src="assets/navbar_behaivior.js" type="module"></script>
+
+<nav class="fixed bg-white w-full top-0 left-0 z-[100]">
+    <div class="flex flex-row">
+        <img class="object-scale-down w-40 mx-12" src="assets/logo_bueno.png" loading="lazy"/>
+        <div class="sm:hidden ml-auto  inline-block align-middle pr-4 pt-2">
+
+            <div class="hidden absolute w-56 right-16 top-12 z-10  rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                 role="menu"
+                 id="burguerMenu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                <div class="py-1" role="none">
+                    <svg id="closeBtn" class="ml-auto mr-5  w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M6 18 17.94 6M18 18 6.06 6"/>
+                    </svg>
+                    <!-- Active: "bg-gray-100 text-gray-900 outline-none", Not Active: "text-gray-700" -->
+                    <a href="index.html"
+                       class="block px-4 py-2 text-sm font-medium text-gray-500 hover:bg-orange-500 hover:text-white"
+                       role="menuitem" tabindex="-1" id="menu-item-0">Inicio</a>
+                    <a href="index_nosotros.html"
+                       class="block px-4 py-2 text-sm font-medium text-gray-500 hover:bg-orange-500 hover:text-white"
+                       role="menuitem" tabindex="-1" id="menu-item-1">Nosotros</a>
+                    <a href="#"
+                       class="block px-4 py-2 text-sm font-medium text-gray-500 hover:bg-orange-500 hover:text-white"
+                       role="menuitem" tabindex="-1" id="menu-item-2">Servicios</a>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-end py-6" id="burguerBtn">
+                <div class="space-y-2 pr-10">
+                    <div class="w-8 h-0.5 bg-gray-600"></div>
+                    <div class="w-8 h-0.5 bg-gray-600"></div>
+                    <div class="w-8 h-0.5 bg-gray-600"></div>
+                </div>
+            </div>
+        </div>
+        <div class="sm:flex hidden ml-auto md:mr-24 sm:mr-12" id="navBarMenu">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a href="index.html"
+               class=" px-5 py-6 text-sm font-medium text-gray-500 hover:bg-orange-500 hover:text-white"
+               aria-current="page">Inicio</a>
+            <a href="#"
+               class="bg-orange-500 px-5 py-6 text-sm font-medium text-white hover:bg-orange-500 hover:text-white">Nosotros</a>
+            <a href="#servicios-link"
+               class=" px-5 py-6 text-sm font-medium text-gray-400 hover:bg-orange-500 hover:text-white">Servicios</a>
+            <a href="#" class=" px-5 py-6 text-sm font-medium text-gray-400 hover:bg-orange-500 hover:text-white">Contacto</a>
+        </div>
+
+    </div>
+</nav>
+
+
+<div class="py-6">
+    <br>
+</div>
+
+<div class="w-full h-[42rem] lg:px-24 lg:py-12 bg-main_blue sm:mt-10">
+    <div class="relative overflow-hidden h-full block z-10
+        bg-[url('assets/container.jpg')]  bg-cover bg-no-repeat bg-center
+         before:content-[''] before:absolute before:inset-0 before:block
+         before:bg-main_blue
+         before:opacity-75 before:z-[-5]">
+        <div class="relative md:h-[28rem] h-[34rem] bg-gray-200 lg:mx-12 md:mx-auto mx-auto mt-12 rounded-xl overflow-hidden  w-80 md:w-160 ">
+            <div class="absolute animate-fadeSlideIn">
+                <div class=" flex flex-col gap-y-3 pt-10 lg:pl-14 md:pl-14 pl-4 pb-12">
+                    <span class="sm:text-5xl text-4xl text-main_blue font-bold text-left ">NUESTRA </span>
+
+                    <span class="sm:text-5xl text-4xl text-main_orange font-bold">EMPRESA </span>
+
+                </div>
+                <div class="lg:px-16 md:px-6 sm:px-4 px-4 text-justify pb-12 leading-5">
+                    <p class="font-normal">
+                        Empresa líder en soluciones logísticas, especializada en el
+                        transporte seguro y eficiente de mercancías a cualquier
+                        lugar de la República Mexicana. Con una flota de camiones
+                        de última generación, garantizamos la máxima seguridad
+                        y puntualidad en cada envío.
+                    </p>
+                    <br>
+                    <p class="font-normal">
+                        Nuestro compromiso es ofrecer servicios logísticos de alta
+                        calidad, adaptados a las necesidades específicas de
+                        nuestros clientes, asegurando que sus productos lleguen a
+                        destino de manera impecable y en el tiempo previsto
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="w-f flex flex-row  mt-24 bg-gray-200 sm:bg-none">
+    <div class="w-3/6 pb-12 lg:bg-striped sm:bg-stripedThird">
+
+        <div class="sm:pt-12 mx-auto sm:w-2/3">
+            <div class="lg:flex lg:flex-row lg:gap-x-12 p-4 py-12 sm:p-0 sm:py-0">
+                <div class="object-none  sm:h-64 mb-16 lg:mb-0 animate-fadeSlideIn">
+                    <img src="assets/front_truck.png" alt="" class="sm:w-60 sm:h-64 rounded-xl mx-auto" loading="lazy">
+                </div>
+
+                <img src="assets/back_of_truck.png" alt=""
+                     class="rounded-xl sm:w-52 sm:h-64 md:mx-auto mb-12 lg:mb-0 animate-fadeSlideInTop" loading="lazy">
+            </div>
+            <div class="w-f sm:pt-12 pt-4 p-4 sm:p-0">
+                <img src="assets/camion_1_1_cut.jpeg" alt=""
+                     class="rounded-xl sm:w-full sm:h-64 h-32  animate-fadeSlideInBottom" loading="lazy">
+            </div>
+
+        </div>
+
+    </div>
+    <div class="w-3/6  h-full py-24 sm:pr-24 px-6 sm:px-0 flex flex-col gap-y-4">
+
+        <span class="sm:text-5xl text-4xl text-main_blue font-bold text-left ">Misión </span>
+        <p class="font-normal text-justify ">
+            Nuestra misión es proporcionar soluciones de transporte y
+            logistica de alta calidad, garantizando la entrega
+            oportuna y segura de cargas a nuestros clientes.
+        </p>
+
+        <p class="font-normal text-justify ">
+            Nos comprometemos a ser un socio confiable, eficiente y
+            resposable; adaptandonos a las necesidades cambiantes
+            del mercado y fomentando relaciones duraderas con
+            nuestros clientes
+        </p>
+
+        <span class="sm:text-5xl text-4xl text-main_blue font-bold text-left sm:mt-12">Visión </span>
+        <p class="font-normal text-justify ">
+            Ser líderes en la industria de la logística y el transporte,
+            reconocidos por nuestra innovación, excelencia
+            operativa y compromiso con la sostenibilidad.
+        </p>
+
+        <p class="font-normal text-justify ">
+            Nuestro objetivo es expandir nuestras operaciones a nivel
+            nacional e internacional, estableciendo estándares de
+            calidad y servicio que superen las expectativas de
+            nuestros clientes
+        </p>
+    </div>
+</div>
+
+
+<svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg"
+     version="1.1">
+    <defs>
+        <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur"/>
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo"/>
+            <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+        </filter>
+    </defs>
+</svg>
+
+<div class="content">
+
+    <iframe src="assets/mx.html" frameborder="0" class="h-104 overflow-y-hidden w-full mt-20" id="niceMap" loading="lazy">
+
+    </iframe>
+</div>
+<script src="assets/main.js"></script>
+<div class="mt-10" id="ship">
+    <svg fill="#0000ff" height="50px" width="50px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+         viewBox="0 0 512.042 512.042" xml:space="preserve">
+    <g transform="translate(-1)" x="0">
+        <g>
+            <path d="M512.593,273.091c-0.008-0.041-0.019-0.08-0.027-0.121c-0.119-0.557-0.263-1.115-0.43-1.672
+                c-0.043-0.145-0.082-0.29-0.127-0.434c-0.154-0.479-0.323-0.957-0.514-1.434l-0.132-0.33c-0.01-0.024-0.019-0.048-0.029-0.072
+                l-42.506-106.265c-3.24-8.099-11.084-13.41-19.807-13.41v-64c0-11.782-9.551-21.333-21.333-21.333h-64
+                c-11.782,0-21.333,9.551-21.333,21.333v85.333v85.333h-21.333v-42.667c0-11.782-9.551-21.333-21.333-21.333h-21.333v-42.667
+                c0-11.782-9.551-21.333-21.333-21.333h-21.333V85.354c0-11.782-9.551-21.333-21.333-21.333h-85.333
+                c-11.782,0-21.333,9.551-21.333,21.333v42.667H86.354c-11.782,0-21.333,9.551-21.333,21.333v42.667H43.688
+                c-11.782,0-21.333,9.551-21.333,21.333v42.667c-15.093,0-25.413,15.243-19.807,29.256l41.141,102.852v17.289
+                c0,23.515,19.087,42.603,42.603,42.603h315.157c9.387,0,18.498-2.975,26.162-8.38c1.776-1.207,2.802-1.959,4.217-3.213
+                l18.798-16.928l10.374-9.349l42.268-38.024c6.198-5.579,9.754-13.536,9.754-21.876v-72.194
+                C513.075,276.422,512.94,274.759,512.593,273.091z M385.021,106.688h21.333v42.667h-21.333V106.688z M385.021,192.021h42.667h6.89
+                l25.6,64h-75.157V192.021z M150.354,256.021v-21.333h21.333h21.333v21.333H150.354z M235.688,234.688h21.333h21.333v21.333
+                h-42.667V234.688z M214.354,192.021h-21.333v-21.333h21.333h21.333v21.333H214.354z M150.354,106.688h42.667v21.333h-21.333
+                h-21.333V106.688z M107.688,170.688h21.333h21.333v21.333h-21.333h-21.333V170.688z M65.021,234.688h21.333h21.333v21.333H65.021
+                V234.688z M470.354,344.344l-37.905,34.099l-10.382,9.357l-18.661,16.805c-0.955,0.569-1.506,0.748-1.958,0.748H86.354v-21.333
+                c0-2.714-0.518-5.403-1.526-7.923l-30.964-77.41h75.157h85.333h85.333h64h106.667V344.344z"
+                  stroke-width="100"/>
+        </g>
+    </g>
+        <rect x="125" y="10" width="80" height="60" rx="15" style=" fill: blue;"/>
+</svg>
+
+</div>
+
+
+
+<footer class="sticky top-[100vh] left-0 px-12 pt-4 p-2 z-20 w-full lg:px-20 bg-white border-t-4 border-blue-500 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
+
+
+    <img src="assets/double_camion2.png" alt="" class="w-56 h-56 mx-auto md:mx-0 mb-10 md:mb-0" loading="lazy">
+
+    <div class="flex flex-col text-center items-center">
+        <img class="object-scale-down w-40 mx-12" src="assets/logo_bueno.png">
+        <br>
+        <p class="text-gray-700 w-3/4">
+            En TGN Logistics nos aseguramos de que las mercancías lleguen al lugar requerido en el momento exacto
+        </p>
+    </div>
+
+    <ul class="flex flex-col gap-y-6 mf:gap-y2 md:items-start md:text-start text-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+
+
+        <li>
+            <span>Contacto:</span>
+            <br>
+            <a href="mailto:contacto@tgnlogistics.com" class="hover:underline font-bold">
+                contacto@tgnlogistics.com</a>
+        </li>
+        <li>
+            <span>
+                Telefono:
+            </span>
+            <br>
+            <a href="tel:+52-753-124-9010" class="font-bold">+52-753-126-9010</a>
+        </li>
+
+        <li class="px-10 md:px-0">
+            <span>
+                Direccion:
+            </span>
+            <br>
+            <p class="font-bold">
+                Calle Jacona #5 Col.600 Casas
+                Cp. 60954, Lazaro Cardenas, Mich.
+            </p>
+        </li>
+
+    </ul>
+</footer>
+
+
+</body>
+</html>

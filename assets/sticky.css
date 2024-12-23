@@ -2,13 +2,35 @@
     top:90%;
 }
 
+@media(min-width:300px)
+{
+    #ship {
+        animation-name: moveShip;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+}
+
+@media(min-width:600px)
+{
+    #ship {
+        animation-name: moveShipBig;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+}
+
+
 @keyframes moveShip {
-    from {margin-left: 24rem;}
+    from {margin-left: 16rem;}
     to {margin-left: 1rem;}
 }
 
-#ship{
-    animation-name: moveShip;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
+
+@keyframes moveShipBig {
+    from {margin-left: 32rem;}
+    to {margin-left: 1rem;}
 }
+
+
+

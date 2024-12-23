@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="es" class="m-0 p-0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TGNLogistics LZC</title>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+    <link rel="stylesheet" href="assets/sticky.css">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="assets/apple-touch-icon-57x57.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/apple-touch-icon-114x114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/apple-touch-icon-144x144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="assets/apple-touch-icon-60x60.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="assets/apple-touch-icon-120x120.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="assets/apple-touch-icon-76x76.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="assets/apple-touch-icon-152x152.png"/>
+    <link rel="icon" type="image/png" href="assets/favicon-196x196.png" sizes="196x196"/>
+    <link rel="icon" type="image/png" href="assets/favicon-96x96.png" sizes="96x96"/>
+    <link rel="icon" type="image/png" href="assets/favicon-32x32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="assets/favicon-16x16.png" sizes="16x16"/>
+    <link rel="icon" type="image/png" href="assets/favicon-128.png" sizes="128x128"/>
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF"/>
+    <meta name="msapplication-TileImage" content="assets/mstile-144x144.png"/>
+    <meta name="msapplication-square70x70logo" content="assets/mstile-70x70.png"/>
+    <meta name="msapplication-square150x150logo" content="assets/mstile-150x150.png"/>
+    <meta name="msapplication-wide310x150logo" content="assets/mstile-310x150.png"/>
+    <meta name="msapplication-square310x310logo" content="assets/mstile-310x310.png"/>
+
+    <link rel="stylesheet" href="assets/camiones_slider.css">
+
+    <!--    <script src="assets/speed.js"></script>-->
+    <link rel="stylesheet" href="assets/general.css">
+    <meta property="og:site_name" content="TGNLogistics LZC">
+    <meta property="og:title" content="Soluciones en logística"/>
+
+    <meta property="og:image" itemprop="image" content="assets/camion3.jpeg">
+    <meta property="og:type" content="website"/>
+
+
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body class="m-0 p-0">
+<script src="assets/navbar_behaivior.js" type="module"></script>
+
+<nav class="fixed bg-white w-full top-0 left-0 z-[100] ">
+    <div class="flex flex-row">
+        <img class="object-scale-down w-40 mx-12 " src="assets/logo_bueno.png"/>
+        <div class="sm:hidden ml-auto  inline-block align-middle pr-4 pt-2" >
+
+            <div class="hidden absolute w-56 right-16  z-10 mt-2 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu"
+                 id="burguerMenu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                <div class="py-1" role="none">
+                    <svg id="closeBtn" class="ml-auto mr-5  w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6"/>
+                    </svg>
+                    <!-- Active: "bg-gray-100 text-gray-900 outline-none", Not Active: "text-gray-700" -->
+                    <a href="index.html" class="block px-4 py-2 text-sm font-medium text-gray-500 hover:bg-orange-500 hover:text-white" role="menuitem" tabindex="-1" id="menu-item-0">Inicio</a>
+                    <a href="index_nosotros.html" class="block px-4 py-2 text-sm font-medium text-gray-500 hover:bg-orange-500 hover:text-white" role="menuitem" tabindex="-1" id="menu-item-1">Nosotros</a>
+                    <a href="#" class="block px-4 py-2 text-sm font-medium text-gray-500 hover:bg-orange-500 hover:text-white" role="menuitem" tabindex="-1" id="menu-item-2">Servicios</a>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-end py-6" id="burguerBtn">
+                <div class="space-y-2 pr-10">
+                    <div class="w-8 h-0.5 bg-gray-600"></div>
+                    <div class="w-8 h-0.5 bg-gray-600"></div>
+                    <div class="w-8 h-0.5 bg-gray-600"></div>
+                </div>
+            </div>
+        </div>
+        <div class="sm:flex hidden ml-auto md:mr-24 sm:mr-12" id="navBarMenu">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a href="#l"
+               class=" bg-orange-500 px-5 py-6 text-sm font-medium text-white hover:bg-orange-500 hover:text-white"
+               aria-current="page">Inicio</a>
+            <a href="index_nosotros.html"
+               class=" px-5 py-6 text-sm font-medium text-gray-400 hover:bg-orange-500 hover:text-white">Nosotros</a>
+            <a href="#servicios-link"
+               class=" px-5 py-6 text-sm font-medium text-gray-400 hover:bg-orange-500 hover:text-white">Servicios</a>
+            <a href="#" class=" px-5 py-6 text-sm font-medium text-gray-400 hover:bg-orange-500 hover:text-white">Contacto</a>
+        </div>
+
+    </div>
+</nav>
+
+<div class="md:py-2 py-10">
+    <br>
+</div>
+
+<div class="content ">
+    <div class="grid md:grid-cols-12 sm:grid-cols-1">
+        <div class="md:col-span-5 sm:col-span-1 text-left ml-12 content-center  animate-fadeIn ">
+            <span class="text-main_blue text-6xl font-bold">
+                Bienvenido a
+            </span>
+            <br/>
+            <span class="text-main_orange text-6xl font-bold">
+                TGN Logistics
+            </span>
+
+            <br>
+
+            <div class="w-3/4 mt-20">
+                <p class="text-xl text-gray-500 font-semibold">
+                    Empresa líder en soluciones logísticas, especializada en el
+                    transporte seguro.
+                </p>
+
+
+            </div>
+
+            <div class="mt-12 animate-bounceIn ">
+                <button class="font-bold py-4 px-4 rounded bg-main_orange hover:bg-main_blue  text-white">Contactanos
+                </button>
+            </div>
+
+        </div>
+        <div class="md:col-span-7 sm:col-span-1">
+            <img src="assets/camion1.jpeg" class="animate-SlideInTop"/>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="content" id="servicios-link">
+    <div class="grid md:grid-cols-12 sm:grid-cols-2">
+
+        <div class="bg-main_blue md:col-span-6 sm:col-span-2 text-left pl-6">
+            <div class="p-24">
+                <span class="text-3xl text-white font-bold mt-">Nuestros</span>
+                <br>
+                <span class="text-3xl text-main_orange font-bold mt-">Servicios</span>
+                <br>
+                <br>
+                <p class="text-white text-xl">
+                    Todas nuestras unidades están en cumplimiento de las normas aplicables al servicio público federal,
+                    en tanto que
+                    nuestros operadores son personas capacitadas y comprometidas con el cumplimiento de los objetivos
+                    comunes.
+                </p>
+            </div>
+        </div>
+        <div class="md:col-span-3 sm:col-span-1 flex flex-col gap-y-2">
+
+            <div class="h-1/2 p-6">
+                <div class="bg-gray-100  shadow-lg rounded overflow-hidden h-72">
+                    <div class="items-center flex flex-col">
+                        <div class="bg-main_blue rounded-full w-50">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="150px" height="150px"
+                                 viewBox="0 -8 72 72" id="Layer_1" data-name="Layer 1">
+                                <path d="M55.81,44.35V36.41a3.09,3.09,0,0,0-3.09-3.09h-.81v-29a.8.8,0,0,0-.34-.65l-2-1.29A.77.77,0,0,0,48.41,3v9.32l-.59-1.58a5.42,5.42,0,0,0-5.07-3.53H29.24a5.43,5.43,0,0,0-5.09,3.56l-.56,1.55V3a.77.77,0,0,0-1.19-.64l-2,1.29a.8.8,0,0,0-.34.65v29h-.81a3.09,3.09,0,0,0-3.09,3.09v7.94H14.87a.77.77,0,0,0-.77.77V49.4a.77.77,0,0,0,.77.77H18.2v2a1.55,1.55,0,0,0,1.55,1.54h4.1a1.54,1.54,0,0,0,1.54-1.54v-2H46.61v2a1.54,1.54,0,0,0,1.54,1.54h4.1a1.55,1.55,0,0,0,1.55-1.54v-2h3.33a.77.77,0,0,0,.77-.77V45.12a.77.77,0,0,0-.77-.77ZM24.62,16.63H47.38v7.62H24.62Zm-.53,25.56H21.45A1.46,1.46,0,0,1,20,40.73v0a1.46,1.46,0,0,1,1.46-1.46h2.64a1.46,1.46,0,0,1,1.46,1.46v0A1.46,1.46,0,0,1,24.09,42.19Zm17.16.43H30.75a1.54,1.54,0,0,1-1.55-1.55V31.28a1.54,1.54,0,0,1,1.55-1.54h10.5a1.54,1.54,0,0,1,1.55,1.54v9.79A1.54,1.54,0,0,1,41.25,42.62Zm9.3-.43H47.91a1.46,1.46,0,0,1-1.46-1.46v0a1.46,1.46,0,0,1,1.46-1.46h2.64A1.46,1.46,0,0,1,52,40.69v0A1.46,1.46,0,0,1,50.55,42.19ZM41,35.39H31a.76.76,0,0,1-.77-.76v0a.76.76,0,0,1,.77-.76H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,35.39Zm0-3.09H31a.76.76,0,0,1-.77-.76v0a.76.76,0,0,1,.77-.76H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,32.3Zm0,9.27H31a.76.76,0,0,1-.77-.76v0A.76.76,0,0,1,31,40H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,41.57Zm0-3.09H31a.76.76,0,0,1-.77-.76v0a.76.76,0,0,1,.77-.76H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,38.48Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 items-center text-center">
+                        <div class="font-bold text-2xl mb-2">Servicios</div>
+                        <p class="text-gray-700 text-base font-bold">
+                            Full - Sencillos
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="h-1/2 p-6">
+                <div class="bg-gray-100  shadow-lg rounded overflow-hidden h-72 ">
+                    <div class="items-center flex flex-col">
+                        <div class="bg-main_blue rounded-full w-50 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="150px" height="150px"
+                                 viewBox="-20 -20 72 72" id="Layer_1" data-name="Layer 1"
+                                 style=" transform: scale(2.0);">
+                                <path d="M29.92,16.61l-3-7A1,1,0,0,0,26,9H23V7a1,1,0,0,0-1-1H3A1,1,0,0,0,2,7V24a1,1,0,0,0,1,1H5.14a4,4,0,0,0,7.72,0h6.28a4,4,0,0,0,7.72,0H29a1,1,0,0,0,1-1V17A1,1,0,0,0,29.92,16.61ZM23,11h2.34l2.14,5H23ZM9,26a2,2,0,1,1,2-2A2,2,0,0,1,9,26Zm10.14-3H12.86a4,4,0,0,0-7.72,0H4V8H21V20.56A4,4,0,0,0,19.14,23ZM23,26a2,2,0,1,1,2-2A2,2,0,0,1,23,26Zm5-3H26.86A4,4,0,0,0,23,20V18h5Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 items-center text-center">
+                        <div class="font-bold text-2xl mb-2">Caja</div>
+                        <p class="text-gray-700 text-base font-bold">
+                            Seca - Refrigerada
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="md:col-span-3 sm:col-span-1 flex flex-col gap-y-2">
+
+            <div class="h-1/2 p-6">
+                <div class="bg-gray-100  shadow-lg rounded overflow-hidden h-72">
+                    <div class="items-center flex flex-col">
+                        <div class="bg-main_blue rounded-full w-50">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="150px" height="150px"
+                                 viewBox="0 -8 72 72" id="Layer_1" data-name="Layer 1">
+                                <path d="M55.81,44.35V36.41a3.09,3.09,0,0,0-3.09-3.09h-.81v-29a.8.8,0,0,0-.34-.65l-2-1.29A.77.77,0,0,0,48.41,3v9.32l-.59-1.58a5.42,5.42,0,0,0-5.07-3.53H29.24a5.43,5.43,0,0,0-5.09,3.56l-.56,1.55V3a.77.77,0,0,0-1.19-.64l-2,1.29a.8.8,0,0,0-.34.65v29h-.81a3.09,3.09,0,0,0-3.09,3.09v7.94H14.87a.77.77,0,0,0-.77.77V49.4a.77.77,0,0,0,.77.77H18.2v2a1.55,1.55,0,0,0,1.55,1.54h4.1a1.54,1.54,0,0,0,1.54-1.54v-2H46.61v2a1.54,1.54,0,0,0,1.54,1.54h4.1a1.55,1.55,0,0,0,1.55-1.54v-2h3.33a.77.77,0,0,0,.77-.77V45.12a.77.77,0,0,0-.77-.77ZM24.62,16.63H47.38v7.62H24.62Zm-.53,25.56H21.45A1.46,1.46,0,0,1,20,40.73v0a1.46,1.46,0,0,1,1.46-1.46h2.64a1.46,1.46,0,0,1,1.46,1.46v0A1.46,1.46,0,0,1,24.09,42.19Zm17.16.43H30.75a1.54,1.54,0,0,1-1.55-1.55V31.28a1.54,1.54,0,0,1,1.55-1.54h10.5a1.54,1.54,0,0,1,1.55,1.54v9.79A1.54,1.54,0,0,1,41.25,42.62Zm9.3-.43H47.91a1.46,1.46,0,0,1-1.46-1.46v0a1.46,1.46,0,0,1,1.46-1.46h2.64A1.46,1.46,0,0,1,52,40.69v0A1.46,1.46,0,0,1,50.55,42.19ZM41,35.39H31a.76.76,0,0,1-.77-.76v0a.76.76,0,0,1,.77-.76H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,35.39Zm0-3.09H31a.76.76,0,0,1-.77-.76v0a.76.76,0,0,1,.77-.76H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,32.3Zm0,9.27H31a.76.76,0,0,1-.77-.76v0A.76.76,0,0,1,31,40H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,41.57Zm0-3.09H31a.76.76,0,0,1-.77-.76v0a.76.76,0,0,1,.77-.76H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,38.48Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 items-center text-center ">
+                        <div class="font-bold text-2xl mb-2">Servicios</div>
+                        <p class="text-gray-700 text-base font-bold">
+                            Consolidación
+                            Desconsolidación
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="h-1/2 p-6">
+                <div class="bg-gray-100  shadow-lg rounded overflow-hidden h-72">
+                    <div class="items-center flex flex-col">
+                        <div class="bg-main_blue rounded-full w-50">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="150px" height="150px"
+                                 viewBox="0 -8 72 72" id="Layer_1" data-name="Layer 1">
+                                <path d="M55.81,44.35V36.41a3.09,3.09,0,0,0-3.09-3.09h-.81v-29a.8.8,0,0,0-.34-.65l-2-1.29A.77.77,0,0,0,48.41,3v9.32l-.59-1.58a5.42,5.42,0,0,0-5.07-3.53H29.24a5.43,5.43,0,0,0-5.09,3.56l-.56,1.55V3a.77.77,0,0,0-1.19-.64l-2,1.29a.8.8,0,0,0-.34.65v29h-.81a3.09,3.09,0,0,0-3.09,3.09v7.94H14.87a.77.77,0,0,0-.77.77V49.4a.77.77,0,0,0,.77.77H18.2v2a1.55,1.55,0,0,0,1.55,1.54h4.1a1.54,1.54,0,0,0,1.54-1.54v-2H46.61v2a1.54,1.54,0,0,0,1.54,1.54h4.1a1.55,1.55,0,0,0,1.55-1.54v-2h3.33a.77.77,0,0,0,.77-.77V45.12a.77.77,0,0,0-.77-.77ZM24.62,16.63H47.38v7.62H24.62Zm-.53,25.56H21.45A1.46,1.46,0,0,1,20,40.73v0a1.46,1.46,0,0,1,1.46-1.46h2.64a1.46,1.46,0,0,1,1.46,1.46v0A1.46,1.46,0,0,1,24.09,42.19Zm17.16.43H30.75a1.54,1.54,0,0,1-1.55-1.55V31.28a1.54,1.54,0,0,1,1.55-1.54h10.5a1.54,1.54,0,0,1,1.55,1.54v9.79A1.54,1.54,0,0,1,41.25,42.62Zm9.3-.43H47.91a1.46,1.46,0,0,1-1.46-1.46v0a1.46,1.46,0,0,1,1.46-1.46h2.64A1.46,1.46,0,0,1,52,40.69v0A1.46,1.46,0,0,1,50.55,42.19ZM41,35.39H31a.76.76,0,0,1-.77-.76v0a.76.76,0,0,1,.77-.76H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,35.39Zm0-3.09H31a.76.76,0,0,1-.77-.76v0a.76.76,0,0,1,.77-.76H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,32.3Zm0,9.27H31a.76.76,0,0,1-.77-.76v0A.76.76,0,0,1,31,40H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,41.57Zm0-3.09H31a.76.76,0,0,1-.77-.76v0a.76.76,0,0,1,.77-.76H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,38.48Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 items-center text-center">
+                        <div class="font-bold text-2xl mb-2">Servicios</div>
+                        <p class="text-gray-700 text-base font-bold">
+                            Locales - Foraneos
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--Mas de nuestros servicios -->
+<div class="bg-main_blue mt-10 pt-12 pb-12 pr-6">
+
+    <img class="object-scale-down h-420 w-40 ml-auto" src="assets/logo_bueno.png" loading="lazy"/>
+
+    <div class="font-bold text-5xl ml-12">
+        <span class="text-white "> + de Nuestros</span>
+        <br>
+        <span class="text-main_orange"> Servicios</span>
+    </div>
+</div>
+
+<div class="font-bold text-lg text-white mt-10 px-10 flex flex-col gap-y-3 ">
+    <div class="bg-main_blue w-full rounded-xl text-center py-2">
+        <span>15 UNIDADES EN MODALIDAD FULL DE MODELOS RECIENTES PARA ENTREGAS EN TODO MÉXICO</span>
+    </div>
+    <div class="bg-main_blue w-full rounded-xl text-center py-2">
+        <span>4 UNIDADES EN MODALIDAD SENCILLO DE MODELOS RECIENTES PARA ENTREGAS EN TODO MÉXICO</span>
+    </div>
+
+    <div class="bg-main_blue w-full rounded-xl text-center py-2">
+        <span>3 UNIDADES LOCALES TIPO NODRIZA FACTOR 9 PARA DESPACHO DE AUTOMÓVILES CON CAPACIDAD DE CARGA DE 9 VEHÍCULOS</span>
+    </div>
+
+    <div class="bg-main_blue w-full rounded-xl text-center py-2">
+        <span>4 UNIDADES LOCALES TIPO NODRIZA FACTOR 4 PARA DESPACHO DE 4 VEHÍCULOS</span>
+    </div>
+
+
+    <div class="bg-main_blue w-full rounded-xl text-center py-2">
+        <span>34 PORTA CONTENEDOR34 porta contenedores abatibles 40 ¨ 20 ¨ ES ABATIBLES 40 ¨ 20 ¨ , 6 REMOLQUES TIPO PLATAFORMA.</span>
+    </div>
+
+    <div class="bg-main_blue w-full rounded-xl text-center py-2">
+        <span>6 porta contenedores abatibles 40 ¨ 20 ¨</span>
+    </div>
+</div>
+
+<div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32 mt-10">
+
+    <img src="assets/ship.jpg"
+         alt=""
+         class="absolute inset-0 -z-10 h-full w-full  object-right md:object-center sm:object-scale-down lg:object-cover md:object-cover"
+        loading="lazy">
+
+    <div class="mx-auto lg:w-2/4 md:w-3/4 w-3/5 mt-32">
+
+        <form id="contactForm" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 h-96   ">
+            <h1 class="text-lg font-bold">Contactanos</h1>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                    Nombre
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                       id="nameInput" type="text"/>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                    Correo Electronico
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                       id="emailInput" type="text" placeholder="xxx@xxx.com"/>
+            </div>
+            <div class="mb-6">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+                    Telefono
+                </label>
+
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                       id="phoneInput" type="text" placeholder="(xxx)-xxx-xxxx"/>
+
+            </div>
+            <div class="flex items-center justify-between">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                        type="button" id="emailBtnAction">
+                    Enviar
+                </button>
+            </div>
+        </form>
+
+    </div>
+
+</div>
+
+<div id="toast-simple" class="hidden flex items-center
+w-full max-w-xs p-4 space-x-4 rtl:space-x-reverse
+text-gray-500 bg-white divide-x rtl:divide-x-reverse
+divide-gray-200 rounded-lg shadow dark:text-gray-400
+dark:divide-gray-700 dark:bg-gray-800
+fixed top-20 right-5
+" role="alert">
+    <svg class="w-5 h-5 text-blue-600 dark:text-blue-500 rotate-45" aria-hidden="true"
+         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="m9 17 8 2L9 1 1 19l8-2Zm0 0V9"/>
+    </svg>
+    <div class="ps-4 text-sm font-normal">Mensaje enviado correctamente.</div>
+</div>
+
+<div id="successBanner" class="hidden h-full animate-fadeIn">
+    <div class="flex flex-row align-middle h-full items-center" >
+        <span class="text-6xl text-center grow">✅</span>
+        <p class="font-medium mt-24 mb-24 ml-24 mr-12 text-2xl w-1/2">
+            Gracias por ponerte en contacto con nosotros,
+            en brevedad un agente se pondra en contacto.
+
+        </p>
+    </div>
+</div>
+<!--
+<div class="w-full mt-20 mb-10">
+    <div>
+        <div class="sticky z-30 px-8 lg:mx-48 topSticky">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="blue"
+                 class="w-6 h-9 footer-outside-icon rotate-90">
+                <path d="M2.908 2.067A.978.978 0 0 0 2 3.05V8h6V3.05a.978.978 0 0 0-.908-.983 32.481 32.481 0 0 0-4.184 0ZM12.919 4.722A.98.98 0 0 0 11.968 4H10a1 1 0 0 0-1 1v6.268A2 2 0 0 1 12 13h1a.977.977 0 0 0 .985-1 31.99 31.99 0 0 0-1.066-7.278Z"/>
+                <path d="M11 13a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM2 12V9h6v3a1 1 0 0 1-1 1 2 2 0 1 0-4 0 1 1 0 0 1-1-1Z"/>
+                <path d="M6 13a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/>
+            </svg>
+
+
+        </div>
+        <div>
+            <div is-scrollable=true class="mx-auto lg:w-2/4 md:w-3/4 w-3/5">
+                <div>
+                    <img src="assets/camion1.jpeg"/>
+
+                </div>
+                <div class="h-50 p-10 shadow  dark:bg-gray-800 dark:border-gray-600">
+                    <div class="grid h-full place-items-center">
+                        <div>
+                            <strong class="h-10">
+                                Visión</strong>
+                            <p>Ser una empresa líder en el sector del transporte de carga, así como servicios
+                                logísticos integrados, simplificando la cadena de suministro de nuestros clientes y
+                                de constante evolución.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div>
+
+        <div class="sticky z-30 px-8 lg:mx-48 topSticky">
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="red"
+                 class="w-6 h-9 footer-outside-icon rotate-90">
+                <path d="M2.908 2.067A.978.978 0 0 0 2 3.05V8h6V3.05a.978.978 0 0 0-.908-.983 32.481 32.481 0 0 0-4.184 0ZM12.919 4.722A.98.98 0 0 0 11.968 4H10a1 1 0 0 0-1 1v6.268A2 2 0 0 1 12 13h1a.977.977 0 0 0 .985-1 31.99 31.99 0 0 0-1.066-7.278Z"/>
+                <path d="M11 13a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM2 12V9h6v3a1 1 0 0 1-1 1 2 2 0 1 0-4 0 1 1 0 0 1-1-1Z"/>
+                <path d="M6 13a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/>
+            </svg>
+
+        </div>
+        <div class="mx-auto lg:w-2/4 md:w-3/4 w-3/5" is-scrollable=true>
+            <div>
+                <img src="assets/camion2.jpeg"/>
+
+            </div>
+            <div class="h-50 p-10 shadow  dark:bg-gray-800 dark:border-gray-600 items-center">
+                <div class="grid h-full place-items-center">
+                    <div>
+                        <strong class="h-10">Misión</strong>
+                        <p>Proporcionar solucionar efectivas, competitivas en el ámbito logístico, generando de
+                            confianza y rentabilidad hacia nosotros y nuestros clientes.
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div>
+        <div class="sticky z-30 px-8 lg:mx-48  topSticky">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="red"
+                 class="w-6 h-9 footer-outside-icon rotate-90">
+                <path d="M2.908 2.067A.978.978 0 0 0 2 3.05V8h6V3.05a.978.978 0 0 0-.908-.983 32.481 32.481 0 0 0-4.184 0ZM12.919 4.722A.98.98 0 0 0 11.968 4H10a1 1 0 0 0-1 1v6.268A2 2 0 0 1 12 13h1a.977.977 0 0 0 .985-1 31.99 31.99 0 0 0-1.066-7.278Z"/>
+                <path d="M11 13a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM2 12V9h6v3a1 1 0 0 1-1 1 2 2 0 1 0-4 0 1 1 0 0 1-1-1Z"/>
+                <path d="M6 13a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/>
+            </svg>
+        </div>
+        <div class="lg:w-2/4 md:w-3/4 w-3/5 mx-auto" is-scrollable=true>
+            <div>
+                <img src="assets/camion3.jpeg"/>
+
+            </div>
+            <div class="h-50 p-10 shadow dark:bg-gray-800 dark:border-gray-600 items-center ">
+                <div class="grid h-full place-items-center">
+
+                    <div>
+                        <strong class="h-10">Valores</strong>
+
+                        <p>Honestidad: Define nuestro vinculo y seguridad en la organización.
+                            Trabajo en equipo: El ambiente adecuando para la gente adecuada.
+                            Reconocimiento: Valorar, validar e impulsar a nuestros colaboradores.
+                            Respeto: Escuchar, aprender, compartir la ideología de cada colaborador.
+                            Adaptabilidad: Cuidando el presente preparándose proactivamente para el mañana.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+<div id="image-track-con">
+
+    <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+        <img class="image" src="assets/tipos-de-camiones-rigidos-caracteristicas-600x400.jpg" draggable="false"/>
+        <img class="image" src="assets/tipos-de-camiones-rigidos-caracteristicas-600x400.jpg" draggable="false"/>
+        <img class="image" src="assets/tipos-de-camiones-rigidos-caracteristicas-600x400.jpg" draggable="false"/>
+        <img class="image" src="assets/tipos-de-camiones-rigidos-caracteristicas-600x400.jpg" draggable="false"/>
+        <img class="image" src="assets/tipos-de-camiones-rigidos-caracteristicas-600x400.jpg" draggable="false"/>
+
+    </div>
+
+
+</div>
+ -->
+
+
+<script src="assets/create_email.mjs" type="module"></script>
+<script src="assets/main.js"></script>
+
+<div class="mt-6" id="ship">
+    <svg fill="#0000ff" height="50px" width="50px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         viewBox="0 0 512.042 512.042" xml:space="preserve">
+    <g transform="translate(-1)" x="0">
+        <g>
+            <path d="M512.593,273.091c-0.008-0.041-0.019-0.08-0.027-0.121c-0.119-0.557-0.263-1.115-0.43-1.672
+                c-0.043-0.145-0.082-0.29-0.127-0.434c-0.154-0.479-0.323-0.957-0.514-1.434l-0.132-0.33c-0.01-0.024-0.019-0.048-0.029-0.072
+                l-42.506-106.265c-3.24-8.099-11.084-13.41-19.807-13.41v-64c0-11.782-9.551-21.333-21.333-21.333h-64
+                c-11.782,0-21.333,9.551-21.333,21.333v85.333v85.333h-21.333v-42.667c0-11.782-9.551-21.333-21.333-21.333h-21.333v-42.667
+                c0-11.782-9.551-21.333-21.333-21.333h-21.333V85.354c0-11.782-9.551-21.333-21.333-21.333h-85.333
+                c-11.782,0-21.333,9.551-21.333,21.333v42.667H86.354c-11.782,0-21.333,9.551-21.333,21.333v42.667H43.688
+                c-11.782,0-21.333,9.551-21.333,21.333v42.667c-15.093,0-25.413,15.243-19.807,29.256l41.141,102.852v17.289
+                c0,23.515,19.087,42.603,42.603,42.603h315.157c9.387,0,18.498-2.975,26.162-8.38c1.776-1.207,2.802-1.959,4.217-3.213
+                l18.798-16.928l10.374-9.349l42.268-38.024c6.198-5.579,9.754-13.536,9.754-21.876v-72.194
+                C513.075,276.422,512.94,274.759,512.593,273.091z M385.021,106.688h21.333v42.667h-21.333V106.688z M385.021,192.021h42.667h6.89
+                l25.6,64h-75.157V192.021z M150.354,256.021v-21.333h21.333h21.333v21.333H150.354z M235.688,234.688h21.333h21.333v21.333
+                h-42.667V234.688z M214.354,192.021h-21.333v-21.333h21.333h21.333v21.333H214.354z M150.354,106.688h42.667v21.333h-21.333
+                h-21.333V106.688z M107.688,170.688h21.333h21.333v21.333h-21.333h-21.333V170.688z M65.021,234.688h21.333h21.333v21.333H65.021
+                V234.688z M470.354,344.344l-37.905,34.099l-10.382,9.357l-18.661,16.805c-0.955,0.569-1.506,0.748-1.958,0.748H86.354v-21.333
+                c0-2.714-0.518-5.403-1.526-7.923l-30.964-77.41h75.157h85.333h85.333h64h106.667V344.344z"
+                  stroke-width="100"/>
+        </g>
+    </g>
+        <rect x="125" y="10" width="80" height="60" rx="15" style=" fill: blue;"/>
+</svg>
+
+</div>
+
+
+
+<footer class="sticky top-[100vh] left-0 px-12 pt-4 p-2 z-20 w-full lg:px-20 bg-white border-t-4 border-blue-500 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
+
+
+    <img src="assets/double_camion2.png" alt="" class="w-56 h-56 mx-auto md:mx-0 mb-10 md:mb-0" loading="lazy">
+
+    <div class="flex flex-col text-center items-center">
+        <img class="object-scale-down w-40 mx-12" src="assets/logo_bueno.png">
+        <br>
+        <p class="text-gray-700 w-3/4">
+            En TGN Logistics nos aseguramos de que las mercancías lleguen al lugar requerido en el momento exacto
+        </p>
+    </div>
+
+    <ul class="flex flex-col gap-y-2 items-start mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+
+
+        <li>
+            <span>Contacto:</span>
+            <br>
+            <a href="mailto:contacto@tgnlogistics.com" class="hover:underline font-bold">
+                contacto@tgnlogistics.com</a>
+        </li>
+        <li>
+            <span>
+                Telefono:
+            </span>
+            <br>
+            <a href="tel:+52-753-124-9010" class="font-bold">+52-753-126-9010</a>
+        </li>
+
+        <li>
+            <span>
+                Direccion:
+            </span>
+            <br>
+            <p class="font-bold">
+                Calle Jacona #5 Col.600 Casas
+                Cp. 60954, Lazaro Cardenas, Mich.
+            </p>
+        </li>
+
+    </ul>
+</footer>
+
+</body>
+</html>
