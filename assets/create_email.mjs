@@ -13,6 +13,7 @@ let emailInputEl = document.querySelector('#emailInput');
 
 let phoneInputEl = document.querySelector('#phoneInput');
 
+let comentariosInputEl= document.querySelector('#comentariosInput');
 
 sendEmailBtn.addEventListener('click', () => {
 
@@ -36,7 +37,8 @@ sendEmailBtn.addEventListener('click', () => {
         body: JSON.stringify({
             name: nameInputEl.value,
             email: emailInputEl.value,
-            phone: phoneInputEl.value
+            phone: phoneInputEl.value,
+            content: comentariosInputEl.value
 
         })
     })
