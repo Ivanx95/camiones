@@ -23,9 +23,9 @@ sendEmailBtn.addEventListener('click', () => {
         setClass('hidden', successToast);
     }, 5000);
 
-    contactForm.innerHTML = '';
-    contactForm.append(sucessBanner);
-    sendEmailBtn.disable = true;
+
+
+
     fetch("https://www.card-points.uk/mail", {
         method: "post",
         headers: {
@@ -43,7 +43,15 @@ sendEmailBtn.addEventListener('click', () => {
         })
     })
         .then((response) => {
-            sendEmailBtn.disable = false;
+
+            if (response.status == 200) {   // *** This can be just `if (response.ok) {`
+                contactForm.innerHTML = '';
+                contactForm.append(sucessBanner);
+                sendEmailBtn.disable = true;
+            }else{
+                alert("Un error ocurrio, por favor intenete de nuevo mas tarde")
+            }
+
 
         });
 

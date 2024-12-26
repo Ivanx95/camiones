@@ -49,18 +49,27 @@
 <nav class="fixed bg-white w-full top-0 left-0 z-[100] ">
     <div class="flex flex-row">
         <img class="object-scale-down w-40 mx-12 " src="assets/logo_bueno.png"/>
-        <div class="sm:hidden ml-auto  inline-block align-middle pr-4 pt-2" >
+        <div class="sm:hidden ml-auto  inline-block align-middle pr-4 pt-2">
 
-            <div class="hidden absolute w-56 right-16  z-10 mt-2 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu"
+            <div class="hidden absolute w-56 right-16  z-10 mt-2 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                 role="menu"
                  id="burguerMenu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
                 <div class="py-1" role="none">
-                    <svg id="closeBtn" class="ml-auto mr-5  w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6"/>
+                    <svg id="closeBtn" class="ml-auto mr-5  w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M6 18 17.94 6M18 18 6.06 6"/>
                     </svg>
                     <!-- Active: "bg-gray-100 text-gray-900 outline-none", Not Active: "text-gray-700" -->
-                    <a href="index.html" class="block px-4 py-2 text-sm font-medium text-gray-500 hover:bg-orange-500 hover:text-white" role="menuitem" tabindex="-1" id="menu-item-0">Inicio</a>
-                    <a href="nosotros.html" class="block px-4 py-2 text-sm font-medium text-gray-500 hover:bg-orange-500 hover:text-white" role="menuitem" tabindex="-1" id="menu-item-1">Nosotros</a>
-                    <a href="#" class="block px-4 py-2 text-sm font-medium text-gray-500 hover:bg-orange-500 hover:text-white" role="menuitem" tabindex="-1" id="menu-item-2">Servicios</a>
+                    <a href="index.html"
+                       class="block px-4 py-2 text-sm font-medium text-gray-500 hover:bg-orange-500 hover:text-white"
+                       role="menuitem" tabindex="-1" id="menu-item-0">Inicio</a>
+                    <a href="nosotros.html"
+                       class="block px-4 py-2 text-sm font-medium text-gray-500 hover:bg-orange-500 hover:text-white"
+                       role="menuitem" tabindex="-1" id="menu-item-1">Nosotros</a>
+                    <a href="#"
+                       class="block px-4 py-2 text-sm font-medium text-gray-500 hover:bg-orange-500 hover:text-white"
+                       role="menuitem" tabindex="-1" id="menu-item-2">Servicios</a>
                 </div>
             </div>
 
@@ -131,7 +140,7 @@
     <div class="grid md:grid-cols-12 sm:grid-cols-2">
 
         <div class="bg-main_blue md:col-span-6 sm:col-span-2 text-left pl-6">
-            <div class="p-24">
+            <div class="p-24 mt-24">
                 <span class="text-3xl text-white font-bold mt-">Nuestros</span>
                 <br>
                 <span class="text-3xl text-main_orange font-bold mt-">Servicios</span>
@@ -278,58 +287,59 @@
     <img src="assets/ship.jpg"
          alt=""
          class="absolute inset-0 -z-10 h-full w-full  object-right md:object-center sm:object-scale-down lg:object-cover md:object-cover"
-        loading="lazy">
+         loading="lazy"/>
 
-    <div class="mx-auto lg:w-2/4 md:w-3/4 w-3/5 mt-32">
+    <div class="mx-auto lg:w-2/4 md:w-3/4  mt-32 px-8 md:px-0">
 
-        <form id="contactForm" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 h-128   ">
-            <h1 class="text-lg font-bold">Contactanos</h1>
-            <div class="mb-4">
-                <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
-                    Nombre
-                </label>
-                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                       id="nameInput" type="text"/>
-            </div>
-            <div class="mb-4">
-                <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
-                    Correo Electronico
-                </label>
-                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                       id="emailInput" type="text" placeholder="xxx@xxx.com"/>
-            </div>
+        <div id="contactForm" class="h-128">
+            <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                <h1 class="text-lg font-bold">Contactanos</h1>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                        Nombre
+                    </label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                           id="nameInput" type="text"/>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                        Correo Electronico
+                    </label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                           id="emailInput" type="text" placeholder="xxx@xxx.com"/>
+                </div>
 
-            <div class="mb-6">
-                <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
-                    Comentario
-                </label>
+                <div class="mb-6">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+                        Comentario
+                    </label>
 
-                <textarea class="shadow appearance-none border rounded w-full py-2 px-3 h-32 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                       id="comentariosInput" type="textarea">
+                    <textarea
+                            class="shadow appearance-none border rounded w-full py-2 px-3 h-14 md:h-32 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="comentariosInput" type="textarea"></textarea>
 
-                </textarea>
+                </div>
 
-            </div>
+                <div class="mb-6">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+                        Teléfono
+                    </label>
 
-            <div class="mb-6">
-                <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
-                    Teléfono
-                </label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                           id="phoneInput" type="text" placeholder="(xxx)-xxx-xxxx"/>
 
-                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                       id="phoneInput" type="text" placeholder="(xxx)-xxx-xxxx"/>
+                </div>
+                <div class="flex items-center justify-between">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                            type="button" id="emailBtnAction">
+                        Enviar
+                    </button>
+                </div>
+            </form>
 
-            </div>
-            <div class="flex items-center justify-between">
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                        type="button" id="emailBtnAction">
-                    Enviar
-                </button>
-            </div>
-        </form>
 
+        </div>
     </div>
-
 </div>
 
 <div id="toast-simple" class="hidden flex items-center
@@ -347,16 +357,20 @@ fixed top-20 right-5
     <div class="ps-4 text-sm font-normal">Mensaje enviado correctamente.</div>
 </div>
 
-<div id="successBanner" class="hidden h-full animate-fadeIn">
-    <div class="flex flex-row align-middle h-full items-center" >
-        <span class="text-6xl text-center grow">✅</span>
-        <p class="font-medium mt-24 mb-24 ml-24 mr-12 text-2xl w-1/2">
-            Gracias por ponerte en contacto con nosotros,
-            en brevedad un agente se pondra en contacto.
+<div id="successBanner" class="hidden h-128 flex flex-row items-center ">
+    <div class="flex flex-col lg:flex-row align-middle  items-center  bg-white shadow-md
+    rounded animate-fadeIn">
+        <span class=" text-4xl lg:text-center lg:grow lg:mt-0 mt-10">✅</span>
+
+        <p class="font-medium mt-6 lg:mt-12 mb-4 lg:mb-12 ml-4 lg:ml-6   text-justify
+                     mr-4 lg:mr-12 md:text-xl lg:w-1/2">
+            Gracias por contactarnos,
+            en brevedad un agente se pondrá en contacto.
 
         </p>
     </div>
 </div>
+
 <!--
 <div class="w-full mt-20 mb-10">
     <div>
@@ -513,7 +527,6 @@ fixed top-20 right-5
 </div>
 
 
-
 <footer class="sticky top-[100vh] left-0 px-12 pt-4 p-2 z-20 w-full lg:px-20 bg-white border-t-4 border-blue-500 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
 
 
@@ -523,7 +536,8 @@ fixed top-20 right-5
         <img class="object-scale-down w-40 mx-12" src="assets/logo_bueno.png">
         <br>
         <p class="text-gray-700 w-3/4">
-            En TGN Logistics nos aseguramos de que las mercancías lleguen al lugar requerido en el momento exacto
+            En TGN Logistics nos aseguramos de que las mercancías lleguen al lugar requerido en el momento
+            exacto
         </p>
     </div>
 
