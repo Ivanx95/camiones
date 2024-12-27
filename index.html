@@ -292,45 +292,72 @@
     <div class="mx-auto lg:w-2/4 md:w-3/4  mt-32 px-8 md:px-0">
 
         <div id="contactForm" class="h-128">
-            <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 ">
                 <h1 class="text-lg font-bold">Contactanos</h1>
                 <div class="mb-4">
-                    <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="nameInput">
                         Nombre
                     </label>
-                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                           id="nameInput" type="text"/>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight
+                        focus:outline-none focus:border-b-blue-300 focus:border-2"
+                           id="nameInput" type="text" />
+                    <div class="h-4">
+                        <p class="text-red-600 text-sm hidden" id="inputWarningName">
+                            Campo requerido
+                        </p>
+                    </div>
+
                 </div>
                 <div class="mb-4">
-                    <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="emailInput">
                         Correo Electronico
                     </label>
-                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3
+                    text-gray-700 leading-tight focus:outline-none focus:shadow-outline  focus:border-b-blue-300 focus:border-2"
                            id="emailInput" type="text" placeholder="xxx@xxx.com"/>
+                    <div class="h-4">
+                        <p class="text-red-600 text-sm hidden" id="inputWarningEmail">
+                            Campo requerido
+                        </p>
+                    </div>
                 </div>
 
                 <div class="mb-6">
-                    <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+                    <label class="block text-gray-700 text-sm font-bold mb-2 " for="comentariosInput">
                         Comentario
                     </label>
 
                     <textarea
-                            class="shadow appearance-none border rounded w-full py-2 px-3 h-14 md:h-32 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            class="shadow appearance-none border rounded w-full py-2 px-3 h-14 md:h-32 text-gray-700
+                            leading-tight focus:outline-none focus:shadow-outline  focus:border-b-blue-300 focus:border-2"
                             id="comentariosInput" type="textarea"></textarea>
+                    <div class="h-4">
+                        <p class="text-red-600 text-sm hidden" id="inputWarningComments">
+                            Campo requerido
+                        </p>
+                    </div>
 
                 </div>
 
                 <div class="mb-6">
-                    <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="phoneInput">
                         Teléfono
                     </label>
 
-                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3
+                    text-gray-700 leading-tight focus:outline-none focus:shadow-outline
+                    focus:border-b-blue-300 focus:border-2"
                            id="phoneInput" type="text" placeholder="(xxx)-xxx-xxxx"/>
+                    <div class="h-4">
+                        <p class="text-red-600 text-sm hidden" id="inputWarningPhone">
+                            Campo requerido
+                        </p>
+                    </div>
 
                 </div>
                 <div class="flex items-center justify-between">
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                    <button class="bg-blue-500 hover:bg-blue-700  active:bg-blue-400 text-white
+                    font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                             type="button" id="emailBtnAction">
                         Enviar
                     </button>
