@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<style>
+    .flip-card {
+
+        perspective: 1000px;
+
+    }
+
+    .flip-card-inner {
+        position: relative;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+
+    }
+
+    .rotate {
+        transform: rotateY(180deg);
+    }
+
+    .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .flip-card-back {
+        text-align: center;
+        transform: rotateY(180deg);
+    }
+
+</style>
+
+<link rel="stylesheet" href="./output.css">
+<div class="content" id="servicios-link">
+    <div class="grid md:grid-cols-12 sm:grid-cols-2 mr-10 gap-x-1">
+
+        <div class="bg-main_blue md:col-span-6 sm:col-span-2 text-left">
+            <div class="h-136">
+                <span class="text-3xl text-white font-bold mt-">Nuestros</span>
+                <br>
+                <span class="text-3xl text-main_orange font-bold mt-">Servicios</span>
+                <br>
+                <br>
+                <p class="text-white text-xl">
+                    Todas nuestras unidades están en cumplimiento de las normas aplicables al servicio público federal,
+                    en tanto que
+                    nuestros operadores son personas capacitadas y comprometidas con el cumplimiento de los objetivos
+                    comunes.
+                </p>
+            </div>
+        </div>
+        <div class="md:col-span-3 sm:col-span-1 flex flex-col gap-y-2">
+
+            <div class="h-1/2 ">
+                <div class="flip-card ">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front  px-5">
+                            <div class="bg-gray-100  shadow-lg rounded overflow-hidden h-64">
+                                <div class="items-center flex flex-col">
+                                    <div class="bg-main_blue rounded-full w-50">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="150px"
+                                             height="150px"
+                                             viewBox="0 -8 72 72" id="Layer_1" data-name="Layer 1">
+                                            <path d="M55.81,44.35V36.41a3.09,3.09,0,0,0-3.09-3.09h-.81v-29a.8.8,0,0,0-.34-.65l-2-1.29A.77.77,0,0,0,48.41,3v9.32l-.59-1.58a5.42,5.42,0,0,0-5.07-3.53H29.24a5.43,5.43,0,0,0-5.09,3.56l-.56,1.55V3a.77.77,0,0,0-1.19-.64l-2,1.29a.8.8,0,0,0-.34.65v29h-.81a3.09,3.09,0,0,0-3.09,3.09v7.94H14.87a.77.77,0,0,0-.77.77V49.4a.77.77,0,0,0,.77.77H18.2v2a1.55,1.55,0,0,0,1.55,1.54h4.1a1.54,1.54,0,0,0,1.54-1.54v-2H46.61v2a1.54,1.54,0,0,0,1.54,1.54h4.1a1.55,1.55,0,0,0,1.55-1.54v-2h3.33a.77.77,0,0,0,.77-.77V45.12a.77.77,0,0,0-.77-.77ZM24.62,16.63H47.38v7.62H24.62Zm-.53,25.56H21.45A1.46,1.46,0,0,1,20,40.73v0a1.46,1.46,0,0,1,1.46-1.46h2.64a1.46,1.46,0,0,1,1.46,1.46v0A1.46,1.46,0,0,1,24.09,42.19Zm17.16.43H30.75a1.54,1.54,0,0,1-1.55-1.55V31.28a1.54,1.54,0,0,1,1.55-1.54h10.5a1.54,1.54,0,0,1,1.55,1.54v9.79A1.54,1.54,0,0,1,41.25,42.62Zm9.3-.43H47.91a1.46,1.46,0,0,1-1.46-1.46v0a1.46,1.46,0,0,1,1.46-1.46h2.64A1.46,1.46,0,0,1,52,40.69v0A1.46,1.46,0,0,1,50.55,42.19ZM41,35.39H31a.76.76,0,0,1-.77-.76v0a.76.76,0,0,1,.77-.76H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,35.39Zm0-3.09H31a.76.76,0,0,1-.77-.76v0a.76.76,0,0,1,.77-.76H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,32.3Zm0,9.27H31a.76.76,0,0,1-.77-.76v0A.76.76,0,0,1,31,40H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,41.57Zm0-3.09H31a.76.76,0,0,1-.77-.76v0a.76.76,0,0,1,.77-.76H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,38.48Z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="px-6 py-4 items-center text-center">
+                                    <div class="font-bold text-2xl mb-2">Servicios</div>
+                                    <p class="text-gray-700 text-base font-bold">
+                                        Full - Sencillos
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back  px-5">
+                            <div class="bg-gray-100  shadow-lg rounded overflow-hidden h-64">
+                                <div class="mt-32">
+                                    <p>
+                                        Un texto va aquí
+                                    </p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="h-1/2 ">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front  px-5">
+                            <div class="bg-gray-100  shadow-lg rounded overflow-hidden h-64 ">
+                                <div class="items-center flex flex-col">
+                                    <div class="bg-main_blue rounded-full w-50">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="150px"
+                                             height="150px"
+                                             viewBox="-20 -20 72 72" id="Layer_1" data-name="Layer 1"
+                                             style=" transform: scale(2.0);">
+                                            <path d="M29.92,16.61l-3-7A1,1,0,0,0,26,9H23V7a1,1,0,0,0-1-1H3A1,1,0,0,0,2,7V24a1,1,0,0,0,1,1H5.14a4,4,0,0,0,7.72,0h6.28a4,4,0,0,0,7.72,0H29a1,1,0,0,0,1-1V17A1,1,0,0,0,29.92,16.61ZM23,11h2.34l2.14,5H23ZM9,26a2,2,0,1,1,2-2A2,2,0,0,1,9,26Zm10.14-3H12.86a4,4,0,0,0-7.72,0H4V8H21V20.56A4,4,0,0,0,19.14,23ZM23,26a2,2,0,1,1,2-2A2,2,0,0,1,23,26Zm5-3H26.86A4,4,0,0,0,23,20V18h5Z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="px-6 py-4 items-center text-center">
+                                    <div class="font-bold text-2xl mb-2">Caja</div>
+                                    <p class="text-gray-700 text-base font-bold">
+                                        Seca - Refrigerada
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back px-5">
+                            <div class="bg-gray-100  shadow-lg rounded overflow-hidden h-64  px-5">
+                                <div class="mt-32">
+                                    <p>
+                                        Un texto va aquí
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="md:col-span-3 sm:col-span-1 flex flex-col gap-y-2">
+
+            <div class="h-1/2 ">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front  px-5">
+                            <div class="bg-gray-100  shadow-lg rounded overflow-hidden h-64">
+                                <div class="items-center flex flex-col">
+                                    <div class="bg-main_blue rounded-full w-50">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="150px"
+                                             height="150px"
+                                             viewBox="0 -8 72 72" id="Layer_1" data-name="Layer 1">
+                                            <path d="M55.81,44.35V36.41a3.09,3.09,0,0,0-3.09-3.09h-.81v-29a.8.8,0,0,0-.34-.65l-2-1.29A.77.77,0,0,0,48.41,3v9.32l-.59-1.58a5.42,5.42,0,0,0-5.07-3.53H29.24a5.43,5.43,0,0,0-5.09,3.56l-.56,1.55V3a.77.77,0,0,0-1.19-.64l-2,1.29a.8.8,0,0,0-.34.65v29h-.81a3.09,3.09,0,0,0-3.09,3.09v7.94H14.87a.77.77,0,0,0-.77.77V49.4a.77.77,0,0,0,.77.77H18.2v2a1.55,1.55,0,0,0,1.55,1.54h4.1a1.54,1.54,0,0,0,1.54-1.54v-2H46.61v2a1.54,1.54,0,0,0,1.54,1.54h4.1a1.55,1.55,0,0,0,1.55-1.54v-2h3.33a.77.77,0,0,0,.77-.77V45.12a.77.77,0,0,0-.77-.77ZM24.62,16.63H47.38v7.62H24.62Zm-.53,25.56H21.45A1.46,1.46,0,0,1,20,40.73v0a1.46,1.46,0,0,1,1.46-1.46h2.64a1.46,1.46,0,0,1,1.46,1.46v0A1.46,1.46,0,0,1,24.09,42.19Zm17.16.43H30.75a1.54,1.54,0,0,1-1.55-1.55V31.28a1.54,1.54,0,0,1,1.55-1.54h10.5a1.54,1.54,0,0,1,1.55,1.54v9.79A1.54,1.54,0,0,1,41.25,42.62Zm9.3-.43H47.91a1.46,1.46,0,0,1-1.46-1.46v0a1.46,1.46,0,0,1,1.46-1.46h2.64A1.46,1.46,0,0,1,52,40.69v0A1.46,1.46,0,0,1,50.55,42.19ZM41,35.39H31a.76.76,0,0,1-.77-.76v0a.76.76,0,0,1,.77-.76H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,35.39Zm0-3.09H31a.76.76,0,0,1-.77-.76v0a.76.76,0,0,1,.77-.76H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,32.3Zm0,9.27H31a.76.76,0,0,1-.77-.76v0A.76.76,0,0,1,31,40H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,41.57Zm0-3.09H31a.76.76,0,0,1-.77-.76v0a.76.76,0,0,1,.77-.76H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,38.48Z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="px-6 py-4 items-center text-center ">
+                                    <div class="font-bold text-2xl mb-2">Servicios</div>
+                                    <p class="text-gray-700 text-base font-bold">
+                                        Consolidación
+                                        Desconsolidación
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back px-5">
+                            <div class="bg-gray-100">
+                                <div class="bg-gray-100  shadow-lg rounded overflow-hidden h-64  px-5">
+                                    <div class="mt-32">
+                                        <p>
+                                            Un texto va aquí
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="h-1/2 ">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front  px-5">
+                            <div class="bg-gray-100  shadow-lg rounded overflow-hidden h-64">
+                                <div class="items-center flex flex-col">
+                                    <div class="bg-main_blue rounded-full w-50">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="150px"
+                                             height="150px"
+                                             viewBox="0 -8 72 72" id="Layer_1" data-name="Layer 1">
+                                            <path d="M55.81,44.35V36.41a3.09,3.09,0,0,0-3.09-3.09h-.81v-29a.8.8,0,0,0-.34-.65l-2-1.29A.77.77,0,0,0,48.41,3v9.32l-.59-1.58a5.42,5.42,0,0,0-5.07-3.53H29.24a5.43,5.43,0,0,0-5.09,3.56l-.56,1.55V3a.77.77,0,0,0-1.19-.64l-2,1.29a.8.8,0,0,0-.34.65v29h-.81a3.09,3.09,0,0,0-3.09,3.09v7.94H14.87a.77.77,0,0,0-.77.77V49.4a.77.77,0,0,0,.77.77H18.2v2a1.55,1.55,0,0,0,1.55,1.54h4.1a1.54,1.54,0,0,0,1.54-1.54v-2H46.61v2a1.54,1.54,0,0,0,1.54,1.54h4.1a1.55,1.55,0,0,0,1.55-1.54v-2h3.33a.77.77,0,0,0,.77-.77V45.12a.77.77,0,0,0-.77-.77ZM24.62,16.63H47.38v7.62H24.62Zm-.53,25.56H21.45A1.46,1.46,0,0,1,20,40.73v0a1.46,1.46,0,0,1,1.46-1.46h2.64a1.46,1.46,0,0,1,1.46,1.46v0A1.46,1.46,0,0,1,24.09,42.19Zm17.16.43H30.75a1.54,1.54,0,0,1-1.55-1.55V31.28a1.54,1.54,0,0,1,1.55-1.54h10.5a1.54,1.54,0,0,1,1.55,1.54v9.79A1.54,1.54,0,0,1,41.25,42.62Zm9.3-.43H47.91a1.46,1.46,0,0,1-1.46-1.46v0a1.46,1.46,0,0,1,1.46-1.46h2.64A1.46,1.46,0,0,1,52,40.69v0A1.46,1.46,0,0,1,50.55,42.19ZM41,35.39H31a.76.76,0,0,1-.77-.76v0a.76.76,0,0,1,.77-.76H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,35.39Zm0-3.09H31a.76.76,0,0,1-.77-.76v0a.76.76,0,0,1,.77-.76H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,32.3Zm0,9.27H31a.76.76,0,0,1-.77-.76v0A.76.76,0,0,1,31,40H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,41.57Zm0-3.09H31a.76.76,0,0,1-.77-.76v0a.76.76,0,0,1,.77-.76H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,38.48Z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="px-6 py-4 items-center text-center">
+                                    <div class="font-bold text-2xl mb-2">Servicios</div>
+                                    <p class="text-gray-700 text-base font-bold">
+                                        Locales - Foraneos
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-card-back px-5">
+                            <div class="bg-gray-100  shadow-lg rounded overflow-hidden h-64  px-5">
+                                <div class="mt-32">
+                                    <p>
+                                        Un texto va aquí
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+    let cardsAndImg = {};
+
+    let allCards = document.querySelectorAll("div.flip-card-inner");
+    let allImg = document.querySelectorAll(".flip-card");
+
+    for (let i = 0; i < allCards.length; i++) {
+        cardsAndImg[i] = false;
+        allImg[i].addEventListener('mouseenter', (e) => {
+            if (cardsAndImg[i]) {
+                return;
+            }
+            allCards[i].classList.add("rotate");
+            cardsAndImg[i] = true;
+            setTimeout(function () {
+                cardsAndImg[i] = false;
+                console.log("hi")
+            }, 2000);
+        });
+
+        allImg[i].addEventListener('mouseleave', (e) => {
+
+            console.log("on out");
+            if (cardsAndImg[i]) {
+                setTimeout(function () {
+                    cardsAndImg[i] = false;
+                    allCards[i].classList.remove("rotate");
+                }, 2000);
+                return;
+            }
+            allCards[i].classList.remove("rotate");
+        });
+    }
+
+
+</script>
+</body>
+</html>
