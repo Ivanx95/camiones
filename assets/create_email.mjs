@@ -61,7 +61,6 @@ function doCall() {
     if (!validateInputs()) {
         return;
     }
-    toast();
 
     fetch("https://www.card-points.uk/mail", {
         method: "post",
