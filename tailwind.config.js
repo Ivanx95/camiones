@@ -2,11 +2,13 @@ import {animations} from './assets/animation.config.mjs';
 
 module.exports = {
     content: ["./*.{html,js}"],
+    important: true,
     theme: {
 
         extend: {
             colors: {
                 main_blue: '#040c4c',
+                light_blue:'#fff',
                 main_orange: '#f5320f'
             },
             backgroundImage: {
@@ -27,6 +29,8 @@ module.exports = {
             spacing: {
                 '104': '26rem',
                 '128': '32rem',
+                '132': '34rem',
+                '136': '36rem',
                 '160': '38rem',
                 '170': '40rem',
             }
