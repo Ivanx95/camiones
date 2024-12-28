@@ -1956,6 +1956,10 @@ html *
     margin-top: 3rem !important;
   }
 
+  .lg\:mt-10 {
+    margin-top: 2.5rem !important;
+  }
+
   .lg\:flex {
     display: flex !important;
   }
