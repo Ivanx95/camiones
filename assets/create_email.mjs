@@ -22,12 +22,12 @@ function onEnter(e) {
     }
 }
 
-nameInputEl.addEventListener('keypress',e=>onEnter(e));
+nameInputEl.addEventListener('keypress', e => onEnter(e));
 
 
-emailInputEl.addEventListener('keypress', e=>onEnter(e));
+emailInputEl.addEventListener('keypress', e => onEnter(e));
 
-phoneInputEl.addEventListener('keypress', e=>onEnter(e));
+phoneInputEl.addEventListener('keypress', e => onEnter(e));
 
 comentariosInputEl.addEventListener('keypress', onEnter);
 
@@ -57,8 +57,9 @@ function validateVal(el, warningEl) {
 }
 
 function doCall() {
-
+    sendEmailBtn.disabled = true;
     if (!validateInputs()) {
+        sendEmailBtn.disabled = false;
         return;
     }
 
@@ -77,19 +78,21 @@ function doCall() {
             content: comentariosInputEl.value
 
         })
-    })
-        .then((response) => {
+    }).then((response) => {
 
-            if (response.status == 200) {
-                toast();
-            } else {
-                alert("Un error ocurrio, por favor intente de nuevo mas tarde")
-            }
+        if (response.status == 200) {
+            toast();
+        } else {
+            alert("Un error ocurrío, por favor intente de nuevo mas tarde")
 
-
-        });
+        }
+    }).catch(e => {
+        sendEmailBtn.disabled = false;
+        alert("Un error ocurrío, por favor intente de nuevo mas tarde")
+    });
 }
-sendEmailBtn.addEventListener('click',doCall);
+
+sendEmailBtn.addEventListener('click', doCall);
 
 
 function toast() {
@@ -101,5 +104,5 @@ function toast() {
 
     contactForm.innerHTML = '';
     contactForm.append(sucessBanner);
-    sendEmailBtn.disable = true;
+
 }
