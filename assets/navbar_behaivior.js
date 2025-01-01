@@ -22,5 +22,6 @@ window.onload=function (){
 
     burguerBtn.addEventListener('click', showMenu);
     closeBtn.addEventListener('click', showMenu);
+    burguerMenu.addEventListener('click', showMenu);
 
 };

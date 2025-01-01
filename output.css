@@ -1871,6 +1871,10 @@ html *
     height: 28rem !important;
   }
 
+  .md\:h-28 {
+    height: 7rem !important;
+  }
+
   .md\:w-160 {
     width: 46rem !important;
   }

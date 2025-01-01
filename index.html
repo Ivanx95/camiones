@@ -68,9 +68,12 @@
                     <a href="nosotros.html"
                        class="block px-4 py-2 text-sm font-medium text-gray-500 hover:bg-orange-500 hover:text-white"
                        role="menuitem" tabindex="-1" id="menu-item-1">Nosotros</a>
-                    <a href="#"
+                    <a href="#servicios-link"
                        class="block px-4 py-2 text-sm font-medium text-gray-500 hover:bg-orange-500 hover:text-white"
                        role="menuitem" tabindex="-1" id="menu-item-2">Servicios</a>
+                    <a href="index.html#contactForm"
+                       class="block px-4 py-2 text-sm font-medium text-gray-500 hover:bg-orange-500 hover:text-white"
+                       role="menuitem" tabindex="-1" id="menu-item-3">Contacto</a>
                 </div>
             </div>
 
@@ -84,14 +87,14 @@
         </div>
         <div class="sm:flex hidden ml-auto md:mr-24 sm:mr-12" id="navBarMenu">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            <a href="#l"
+            <a href="#"
                class=" bg-orange-500 px-5 py-6 text-sm font-medium text-white hover:bg-orange-500 hover:text-white"
                aria-current="page">Inicio</a>
             <a href="nosotros.html"
                class=" px-5 py-6 text-sm font-medium text-gray-400 hover:bg-orange-500 hover:text-white">Nosotros</a>
             <a href="#servicios-link"
                class=" px-5 py-6 text-sm font-medium text-gray-400 hover:bg-orange-500 hover:text-white">Servicios</a>
-            <a href="#contactForm"
+            <a href="index.html#contactForm"
                class=" px-5 py-6 text-sm font-medium text-gray-400 hover:bg-orange-500 hover:text-white">Contacto</a>
         </div>
 
@@ -408,7 +411,7 @@
     </div>
 </div>
 
-<div class="relative isolate overflow-hidden bg-gray-900 py-12 mt-10 lg:h-160 h-152">
+<div class="relative isolate overflow-hidden bg-gray-900 py-12 mt-10 lg:h-160 h-152" id="contactForm">
 
     <img src="assets/ship.jpg"
          alt=""
@@ -417,14 +420,14 @@
 
     <div class="mx-auto lg:w-2/4 md:w-3/4  px-8 md:px-0">
 
-        <div id="contactForm" class="h-128">
+        <div class="h-128">
             <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 ">
-                <h1 class="text-lg font-bold">Contactanos</h1>
+                <h1 class="text-lg font-bold"  >Contactanos</h1>
                 <div>
                     <label class="block text-gray-700 text-sm font-bold mb-2" for="nameInput">
                         Nombre
                     </label>
-                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight
+                    <input class="shadow appearance-none border rounded w-full py-1 px-3 text-gray-700 leading-tight
                         focus:outline-none focus:border-b-blue-300 focus:border-2"
                            id="nameInput" type="text"/>
                     <div class="h-4">
@@ -438,7 +441,7 @@
                     <label class="block text-gray-700 text-sm font-bold mb-2" for="emailInput">
                         Correo Electronico
                     </label>
-                    <input class="shadow appearance-none border rounded w-full py-2 px-3
+                    <input class="shadow appearance-none border rounded w-full py-1 px-3
                     text-gray-700 leading-tight focus:outline-none focus:shadow-outline  focus:border-b-blue-300 focus:border-2"
                            id="emailInput" type="text" placeholder="xxx@xxx.com"/>
                     <div class="h-4">
@@ -454,7 +457,7 @@
                     </label>
 
                     <textarea
-                            class="shadow appearance-none border rounded w-full py-2 px-3 h-14 md:h-32 text-gray-700
+                            class="shadow appearance-none border rounded w-full py-2 px-3 h-14 md:h-28 text-gray-700
                             leading-tight focus:outline-none focus:shadow-outline  focus:border-b-blue-300 focus:border-2"
                             id="comentariosInput" type="textarea"></textarea>
                     <div class="h-4">
@@ -470,7 +473,7 @@
                         Teléfono
                     </label>
 
-                    <input class="shadow appearance-none border rounded w-full py-2 px-3
+                    <input class="shadow appearance-none border rounded w-full py-1 px-3
                     text-gray-700 leading-tight focus:outline-none focus:shadow-outline
                     focus:border-b-blue-300 focus:border-2"
                            id="phoneInput" type="text" placeholder="(xxx)-xxx-xxxx"/>
