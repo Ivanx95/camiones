@@ -722,10 +722,6 @@ video {
   margin-bottom: 1rem !important;
 }
 
-.mb-6 {
-  margin-bottom: 1.5rem !important;
-}
-
 .ml-12 {
   margin-left: 3rem !important;
 }
@@ -1431,6 +1427,10 @@ video {
   text-align: justify !important;
 }
 
+.align-baseline {
+  vertical-align: baseline !important;
+}
+
 .align-middle {
   vertical-align: middle !important;
 }
@@ -1618,6 +1618,10 @@ video {
 html *
 {
   font-family: Roboto, serif !important;
+}
+
+.insta{
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%) !important;
 }
 
 .before\:absolute::before {
