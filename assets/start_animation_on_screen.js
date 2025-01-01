@@ -10,11 +10,10 @@ function configureAnimation(elements, cssClass, once){
             if(change.isIntersecting){
                 change.target.classList.add(cssClass);
                 change.target.classList.remove('opacity-0');
-                change.target.classList.remove('hidden');
                 allShown[change]=true;
             }
         });
-        if(allShown.lenght==elements.length){
+        if(allShown.lenght===elements.length){
             for (let elm of elements) {
                 observer.unobserve(elm);
             }
@@ -48,6 +47,5 @@ function configureAnimation(elements, cssClass, once){
 
     for (let elm of elements) {
         configureAnimation([elm], elm.dataset.animation,true);
-
     }
 })();

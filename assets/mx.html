@@ -280,10 +280,30 @@
     </div>
 </div>
 
-<script src="./start_animation_on_screen.js"></script>
 <script>
     let elements = document.querySelectorAll("#MXGUA, #MXNLE, #MXMIC, #MXMOR, #MXCMX,#MXJAL, #MXCOA, #MXTAB, #MXQUE, #MXPUE ");
-    configureAnimation(elements,"animateTick",true)
+
+    let svg = document.querySelector("svg");
+    function onEntry(entry) {
+
+        entry.forEach((change) => {
+            if(change.isIntersecting){
+                for(elm of elements){
+                    elm.classList.add('animateTick');
+                }
+
+            }
+        });
+
+
+    }
+
+    let options = {
+        threshold: [.4]
+    };
+    let observer = new IntersectionObserver(onEntry, options);
+
+    observer.observe(svg);
 </script>
 </body>
 
