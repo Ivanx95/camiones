@@ -17,62 +17,17 @@
         }
     }
 
+    .animateTick {
+        animation: fadeIn 3s linear;
+        fill: #f5320f;
+    }
+
     hmtl, body, svg {
         overflow: hidden;
     }
 
 
 
-    #MXGUA {
-        animation: fadeIn 2s linear;
-        fill: #f5320f;
-
-    }
-
-    #MXNLE {
-        animation: fadeIn 2s linear;
-        fill: #f5320f;
-    }
-
-    #MXMIC {
-        animation: fadeIn 2s linear;
-        fill: #f5320f;
-    }
-
-    #MXMOR {
-        animation: fadeIn 2s linear;
-        fill: #f5320f;
-    }
-
-    #MXCMX {
-        animation: fadeIn 3s linear;
-        fill: #f5320f;
-    }
-
-    #MXJAL {
-        animation: fadeIn 3s linear;
-        fill: #f5320f;
-    }
-
-    #MXCOA {
-        animation: fadeIn 3s linear;
-        fill: #f5320f;
-    }
-
-    #MXTAB {
-        animation: fadeIn 4s linear;
-        fill: #f5320f;
-    }
-
-    #MXQUE {
-        animation: fadeIn 4s linear;
-        fill: #f5320f;
-    }
-
-    #MXPUE {
-        animation: fadeIn 4s linear;
-        fill: #f5320f;
-    }
 
 
     .tooltip {
@@ -325,6 +280,11 @@
     </div>
 </div>
 
+<script src="./start_animation_on_screen.js"></script>
+<script>
+    let elements = document.querySelectorAll("#MXGUA, #MXNLE, #MXMIC, #MXMOR, #MXCMX,#MXJAL, #MXCOA, #MXTAB, #MXQUE, #MXPUE ");
+    configureAnimation(elements,"animateTick",true)
+</script>
 </body>
 
 
