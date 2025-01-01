@@ -23,7 +23,7 @@ function configureAnimation(elements, cssClass, once){
 
 // list of options
     let options = {
-        threshold: [1]
+        threshold: [.80]
     };
 
 // instantiate a new Intersection Observer
