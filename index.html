@@ -46,10 +46,49 @@
 </head>
 <body class="m-0 p-0">
 <script src="assets/navbar_behaivior.js" type="module"></script>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Logistics",
+        "image": [
+            "https://tgn-logistics.com/assets/logo_bueno.png",
+            "https://tgn-logistics.com/assets/double_camion2.png"
+        ],
+        "name": "TGN Logistics",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Calle Jacona #5 Col.600 Casas Cp. 60954, Lazaro Cardenas, Mich.",
+            "addressLocality": "Lázaro Cardenas",
+            "addressRegion": "Michoacán",
+            "postalCode": "60954",
+            "addressCountry": "MX"
+        },
 
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 17.96699,
+            "longitude": -102.2167901
+        },
+        "url": "https://tgn-logistics.com/",
+        "telephone": "+527531249010",
+
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Monday",
+                    "Friday"
+                ],
+                "opens": "09:00",
+                "closes": "18:00"
+            }
+        ],
+        "areaServed": "México"
+    }
+</script>
 <nav class="fixed bg-white w-full top-0 left-0 z-[100] ">
     <div class="flex flex-row">
-        <img class="object-scale-down w-40 mx-12 " src="assets/logo_bueno.png"/>
+        <img class="object-scale-down w-40 mx-12 " src="assets/logo_bueno.png" alt="Logitpo"/>
         <div class="sm:hidden ml-auto  inline-block align-middle pr-4 pt-2">
 
             <div class="hidden absolute w-56 right-16  z-10 mt-2 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
@@ -120,7 +159,7 @@
 
             <div class="w-3/4 mt-20">
                 <p class="text-xl text-gray-500 font-semibold">
-                    Empresa líder en soluciones logísticas, especializada en el
+                    Empresa líder en México de soluciones logísticas, especializada en el
                     transporte seguro.
                 </p>
 
@@ -134,7 +173,7 @@
 
         </div>
         <div class="md:col-span-7 sm:col-span-1">
-            <img src="assets/camion1.jpeg" class="animate-SlideInTop"/>
+            <img src="assets/camion1.jpeg" class="animate-SlideInTop" alt="Camión rojo"/>
         </div>
     </div>
 
@@ -377,7 +416,7 @@
 <!--Mas de nuestros servicios -->
 <div class="bg-main_blue mt-190 lg:mt-10 pt-12 pb-12 pr-6">
 
-    <img class="object-scale-down h-420 w-40 ml-auto" src="assets/logo_bueno.png" loading="lazy"/>
+    <img class="object-scale-down h-420 w-40 ml-auto" src="assets/logo_bueno.png" loading="lazy" alt="Logotipo"/>
 
     <div class="font-bold text-5xl ml-12">
         <span class="text-white "> + de Nuestros</span>
@@ -411,18 +450,19 @@
     </div>
 </div>
 
-<div class="relative isolate overflow-hidden bg-gray-900 py-12 mt-10 lg:h-160 h-152" id="contactForm">
+<section class="relative isolate overflow-hidden bg-gray-900 py-12 mt-10 lg:h-160 h-152" id="contactForm">
+
 
     <img src="assets/ship.jpg"
-         alt=""
+         alt="Cargamento"
          class="absolute inset-0 -z-10 h-full w-full  object-right md:object-center sm:object-scale-down lg:object-cover md:object-cover"
          loading="lazy"/>
 
-    <div class="mx-auto lg:w-2/4 md:w-3/4  px-8 md:px-0">
+    <div class="mx-auto lg:w-2/4 md:w-3/4  px-24 md:px-0">
 
         <div class="h-128">
             <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 ">
-                <h1 class="text-lg font-bold"  >Contactanos</h1>
+                <h1 class="text-md font-bold"  >Contactanos</h1>
                 <div>
                     <label class="block text-gray-700 text-sm font-bold mb-2" for="nameInput">
                         Nombre
@@ -496,7 +536,7 @@
 
         </div>
     </div>
-</div>
+</section>
 
 <div id="toast-simple" class="hidden flex items-center
 w-full max-w-xs p-4 space-x-4 rtl:space-x-reverse
@@ -686,10 +726,10 @@ fixed top-20 right-5
 <footer class="sticky top-[100vh] left-0 px-12 pt-4 p-2 z-20 w-full lg:px-20 bg-white border-t-4 border-blue-500 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
 
 
-    <img src="assets/double_camion2.png" alt="" class="w-56 h-56 mx-auto md:mx-0 mb-10 md:mb-0" loading="lazy">
+    <img src="assets/double_camion2.png" alt="Dos camiones" class="w-56 h-56 mx-auto md:mx-0 mb-10 md:mb-0" loading="lazy" >
 
     <div class="flex flex-col text-center items-center">
-        <img class="object-scale-down w-40 mx-12" src="assets/logo_bueno.png">
+        <img class="object-scale-down w-40 mx-12" src="assets/logo_bueno.png" alt="Logotipo">
         <br>
         <p class="text-gray-700 w-3/4">
             En TGN Logistics nos aseguramos de que las mercancías lleguen al lugar requerido en el momento
