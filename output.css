@@ -1371,6 +1371,16 @@ video {
   padding-bottom: 1.5rem !important;
 }
 
+.px-32 {
+  padding-left: 8rem !important;
+  padding-right: 8rem !important;
+}
+
+.px-24 {
+  padding-left: 6rem !important;
+  padding-right: 6rem !important;
+}
+
 .pb-12 {
   padding-bottom: 3rem !important;
 }
@@ -1897,6 +1907,10 @@ html *
 
   .md\:w-3\/4 {
     width: 75% !important;
+  }
+
+  .md\:w-2\/4 {
+    width: 50% !important;
   }
 
   .md\:grid-cols-12 {
