@@ -26,13 +26,19 @@ module.exports = {
                 fadeSlideInTop : 'fadeSlideInTop 1s linear',
                 fadeSlideInBottom : 'fadeSlideInBottom 1s linear'
             },
+            listStyleImage: {
+                checkmark: 'url("/assets/checkmark.jpeg")',
+            },
             spacing: {
                 '104': '26rem',
                 '128': '32rem',
                 '132': '34rem',
-                '136': '36rem',
-                '160': '38rem',
-                '170': '40rem',
+                '136': '37rem',
+                '152': '43rem',
+                '160': '46rem',
+                '170': '52rem',
+                '172': '54rem',
+                '190': '72rem',
             }
         }
     },
