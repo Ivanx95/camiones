@@ -41,12 +41,33 @@
             margin: 0;
             padding: 0;
         }
-        </style>
 
+        #cover {
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: #fff;
+            z-index: 9999;
+            font-size: 60px;
+            text-align: center;
+            padding-top: 200px;
+            color: #fff;
+        }
     </style>
 
 </head>
 <body>
+
+<div id="cover"></div>
+<script>
+    let cover = document.querySelector("#cover");
+    window.addEventListener('load', function () {
+        console.log("Page is fully loaded");
+        document.body.removeChild(cover);
+    });
+</script>
 <script src="assets/navbar_behaivior.js" type="module"></script>
 
 
