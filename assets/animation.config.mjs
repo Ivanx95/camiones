@@ -66,6 +66,11 @@ export const animations = {
         from: {fill: 'blue;'},
         to: {fill: 'red;'}
     },
+    particleEffect: {
+        '0%': {filter: "blur(15px)"},
+        '100%': {filter: "blur(0px)"},
+    }
+    ,
     bounceIn: {
         '20%,40%,60%,80%,from,to': {
             timing: 'cubic-bezier(0.95, 0.05, 0.795, 0.035)'

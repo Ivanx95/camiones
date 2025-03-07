@@ -43,8 +43,32 @@
 
     <link rel="stylesheet" href="./output.css">
     <link rel="stylesheet" href="./assets/flip.css">
+    <style>
+        #cover {
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: #fff;
+            z-index: 9999;
+            font-size: 60px;
+            text-align: center;
+            padding-top: 200px;
+            color: #fff;
+        }
+    </style>
 </head>
 <body class="m-0 p-0">
+<div id="cover"></div>
+<script>
+    let cover = document.querySelector("#cover");
+    window.addEventListener('load', function () {
+        console.log("Page is fully loaded");
+        document.body.removeChild(cover);
+    });
+
+</script>
 <script src="assets/navbar_behaivior.js" type="module"></script>
 <script type="application/ld+json">
     {
@@ -65,7 +89,6 @@
         },
         "url": "https://tgn-logistics.com/",
         "telephone": "+527531249010",
-
         "areaServed": "México"
     }
 </script>
@@ -127,6 +150,46 @@
     <br>
 </div>
 
+<div class="relative isolate overflow-hidden bg-gray-900">
+
+    <video
+            loop
+            autoplay
+            muted
+            class="absolute inset-0 -z-10 lg:h-full w-full h-full lg:object-cover object-none">
+        <source src="assets/carretera.mp4" type="video/mp4">
+    </video>
+
+    <div class="md:col-span-5 sm:col-span-2 lg:text-left text-center lg:ml-36 mx-auto lg:mt-24 mt-10 h-full w-1/2 mx-auto">
+            <span class="text-orange-500 white-text-shadow lg:text-6xl md:text-4xl text-2xl font-bold">
+                Bienvenido a
+            </span>
+        <img class="object-scale-down w-40 mt-2 mx-auto lg:mx-0" src="assets/logo_bueno.png" alt="Logitpo"/>
+    </div>
+    <div class="lg:w-3/5  w-4/5 text-left lg:ml-36 mx-auto lg:my-10 animate-particleEffect">
+        <p class="lg:text-xl sm:text-sm text-white lg:font-medium font-light text-justify ">
+            Empresa líder en soluciones logísticas, especializada en el transporte seguro y eficiente de
+            mercancías a cualquier lugar de la República Mexicana. Con una flota de camiones de última generación,
+            garantizamos la máxima seguridad y puntualidad en cada envío.
+        </p>
+    </div>
+
+    <div class="lg:ml-36 md:ml-12 ml-8  mb-10 flex flex-row mt-4">
+        <div class="relative isolate overflow-hidden rounded-2xl">
+            <div class="absolute inset-0 -z-10   h-14 glass">
+
+            </div>
+            <button class="font-medium px-4 h-14  text-white hover:bg-white/20 active:bg-white/50">
+                <a href="#contactoSection">
+                    Contactanos
+                </a>
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!--
 <div class="content ">
     <div class="grid md:grid-cols-12 sm:grid-cols-1">
         <div class="md:col-span-5 sm:col-span-1 text-left ml-12 content-center  animate-fadeIn ">
@@ -161,6 +224,7 @@
     </div>
 
 </div>
+-->
 <div class="content mt-10" id="servicios-link">
     <div class="grid md:grid-cols-12 sm:grid-cols-2 lg:mr-10 gap-x-1">
 
@@ -426,7 +490,6 @@
             <li><span>4 unidades locales tipo nodriza factor 4 para despacho de vehículos</span></li>
 
 
-
             <li><span>34 porta contenedores abatibles 40 " 20 ", 6 remolques tipo plataforma</span>
             </li>
 
@@ -436,7 +499,7 @@
     </div>
 </div>
 
-<section class="relative isolate overflow-hidden bg-gray-900 py-12 mt-10 lg:h-160 h-152" >
+<section id="}" class="relative isolate overflow-hidden bg-gray-900 py-12 mt-10 lg:h-160 h-152">
 
 
     <img src="assets/ship.jpg"
@@ -448,7 +511,7 @@
 
         <div class="h-128">
             <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 ">
-                <h1 class="text-md font-bold"  >Contactanos</h1>
+                <h1 class="text-md font-bold">Contactanos</h1>
                 <div>
                     <label class="block text-gray-700 text-sm font-bold mb-2" for="nameInput">
                         Nombre
@@ -712,7 +775,8 @@ fixed top-20 right-5
 <footer class="sticky top-[100vh] left-0 px-12 pt-4 p-2 z-20 w-full lg:px-20 bg-white border-t-4 border-blue-500 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
 
 
-    <img src="assets/double_camion2.png" alt="Dos camiones" class="w-56 h-56 mx-auto md:mx-0 mb-10 md:mb-0" loading="lazy" >
+    <img src="assets/double_camion2.png" alt="Dos camiones" class="w-56 h-56 mx-auto md:mx-0 mb-10 md:mb-0"
+         loading="lazy">
 
     <div class="flex flex-col text-center items-center">
         <img class="object-scale-down w-40 mx-12" src="assets/logo_bueno.png" alt="Logotipo">
@@ -753,7 +817,7 @@ fixed top-20 right-5
 
         <li>
 
-                <span>Redes Sociales: </span>
+            <span>Redes Sociales: </span>
             <div class="flex flex-row align-baseline">
                 <a href="https://api.whatsapp.com/send/?phone=527531249010" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30"
@@ -800,7 +864,7 @@ fixed top-20 right-5
     </ul>
 </footer>
 
-<script src="./assets/flip.js"/>
-<script></script>
+<script src="./assets/flip.js"></script>
+
 </body>
 </html>
