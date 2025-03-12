@@ -7,9 +7,10 @@ module.exports = {
 
         extend: {
             colors: {
-                main_blue: '#040c4c',
-                light_blue:'#fff',
-                main_orange: '#f5320f'
+                main_blue: '#23256f',
+                light_blue:'#2596be',
+                strong_orange: '#f4340c',
+                main_orange: '#ff7414'
             },
             backgroundImage: {
                 striped: 'linear-gradient(90deg, #040c4c 70%, rgb(229 231 235 ) 30%)',
@@ -24,7 +25,8 @@ module.exports = {
                 SlideInTop: 'SlideInTop .50s linear',
                 fadeSlideIn : 'fadeSlideIn 1s linear',
                 fadeSlideInTop : 'fadeSlideInTop 1s linear',
-                fadeSlideInBottom : 'fadeSlideInBottom 1s linear'
+                fadeSlideInBottom : 'fadeSlideInBottom 1s linear',
+                particleEffect : 'particleEffect .3s linear'
             },
             listStyleImage: {
                 checkmark: 'url("/assets/checkmark.jpeg")',
