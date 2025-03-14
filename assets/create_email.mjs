@@ -8,6 +8,7 @@ let sucessBanner = document.querySelector("#successBanner");
 let contactForm = document.querySelector("#contactForm");
 
 let nameInputEl = document.querySelector('#nameInput');
+let empresaInput = document.querySelector('#empresaInput');
 
 let emailInputEl = document.querySelector('#emailInput');
 
@@ -37,11 +38,13 @@ function validateInputs() {
     let inputWarningPhone = document.querySelector('#inputWarningPhone');
     let inputWarningEmail = document.querySelector('#inputWarningEmail');
     let inputWarningComments = document.querySelector('#inputWarningComments');
+    let inputWarningEmpresa = document.querySelector('#inputWarningEmpresa');
 
     let flag = true;
     flag &= validateVal(nameInputEl, warningNameInput);
     flag &= validateVal(phoneInputEl, inputWarningPhone);
     flag &= validateVal(emailInputEl, inputWarningEmail);
+    flag &= validateVal(empresaInput, inputWarningEmpresa);
     flag &= validateVal(comentariosInputEl, inputWarningComments);
     return flag;
 }
@@ -75,6 +78,7 @@ function doCall() {
             name: nameInputEl.value,
             email: emailInputEl.value,
             phone: phoneInputEl.value,
+            empresa: empresaInput.value,
             content: comentariosInputEl.value
 
         })
