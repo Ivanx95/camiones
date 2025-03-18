@@ -64,13 +64,14 @@
 
     import iOS from "./assets/detect_function.mjs";
     import downloadImage from "./assets/utilities/element.util.mjs";
+
     let videoElementParent = document.querySelector("#videoElementParent");
     let gifElement = document.querySelector("#gifElement")
-    if(iOS()){
+    if (iOS()) {
         videoElementParent.children[0].classList.add("hidden");
         gifElement.classList.remove("hidden");
         console.log("is ios")
-    }else{
+    } else {
         console.log("is not ios")
     }
     /*
@@ -193,7 +194,7 @@
         </video>
 
         <img src="assets/video/video_puerto_lzc.gif" id="gifElement"
-               class="absolute inset-0 -z-10 lg:h-full w-full h-full lg:object-cover object-none hidden"
+             class="absolute inset-0 -z-10 lg:h-full w-full h-full lg:object-cover object-none hidden"
 
         />
     </div>
@@ -248,19 +249,22 @@
     <div class="flex flex-wrap gap-x-5 px-5 place-content-center gap-y-4">
         <div class="h-24  border border-blue-400 w-64 text-center flex flex-col gap-y-2 pt-5 relative isolate overflow-hidden">
 
-            <svg xmlns="http://www.w3.org/2000/svg" width="100px" height="50px" viewBox="0 0 24 24" fill="none" class="absolute inset-0 -z-10  w-full h-full  object-none h-16 my-auto">
-                <path d="M16.5562 12.9062L16.1007 13.359C16.1007 13.359 15.0181 14.4355 12.0631 11.4972C9.10812 8.55901 10.1907 7.48257 10.1907 7.48257L10.4775 7.19738C11.1841 6.49484 11.2507 5.36691 10.6342 4.54348L9.37326 2.85908C8.61028 1.83992 7.13596 1.70529 6.26145 2.57483L4.69185 4.13552C4.25823 4.56668 3.96765 5.12559 4.00289 5.74561C4.09304 7.33182 4.81071 10.7447 8.81536 14.7266C13.0621 18.9492 17.0468 19.117 18.6763 18.9651C19.1917 18.9171 19.6399 18.6546 20.0011 18.2954L21.4217 16.883C22.3806 15.9295 22.1102 14.2949 20.8833 13.628L18.9728 12.5894C18.1672 12.1515 17.1858 12.2801 16.5562 12.9062Z" fill="#C1D3FD"/>
+            <svg xmlns="http://www.w3.org/2000/svg" width="100px" height="50px" viewBox="0 0 24 24" fill="none"
+                 class="absolute inset-0 -z-10  w-full h-full  object-none h-16 my-auto">
+                <path d="M16.5562 12.9062L16.1007 13.359C16.1007 13.359 15.0181 14.4355 12.0631 11.4972C9.10812 8.55901 10.1907 7.48257 10.1907 7.48257L10.4775 7.19738C11.1841 6.49484 11.2507 5.36691 10.6342 4.54348L9.37326 2.85908C8.61028 1.83992 7.13596 1.70529 6.26145 2.57483L4.69185 4.13552C4.25823 4.56668 3.96765 5.12559 4.00289 5.74561C4.09304 7.33182 4.81071 10.7447 8.81536 14.7266C13.0621 18.9492 17.0468 19.117 18.6763 18.9651C19.1917 18.9171 19.6399 18.6546 20.0011 18.2954L21.4217 16.883C22.3806 15.9295 22.1102 14.2949 20.8833 13.628L18.9728 12.5894C18.1672 12.1515 17.1858 12.2801 16.5562 12.9062Z"
+                      fill="#C1D3FD"/>
             </svg>
 
             <p class="text-main_blue ">
                 Llamanos | Telefonos
             </p>
             <p class="text-gray-600 font-medium ">
-                4432601496
+                +52-753-124-9010
             </p>
         </div>
         <div class="h-24  border border-blue-400 w-64 text-center flex flex-col pt-1 relative isolate overflow-hidden">
-            <svg  class="absolute inset-0 -z-10  w-full h-14 my-auto object-none" xmlns="http://www.w3.org/2000/svg" width="50px" height="50px"
+            <svg class="absolute inset-0 -z-10  w-full h-14 my-auto object-none" xmlns="http://www.w3.org/2000/svg"
+                 width="50px" height="50px"
                  viewBox="0 0 24 24" fill="#C1D3FD"
                  stroke="#C1D3FD"
                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -281,8 +285,10 @@
         </div>
         <div class="h-24  border border-blue-400 w-64 text-center flex flex-col pt-1 relative isolate overflow-hidden">
 
-            <svg  class="absolute inset-0 -z-10  w-full h-14 my-auto object-none" xmlns="http://www.w3.org/2000/svg" width="200px" height="200px" viewBox="0 0 24 24" fill="none">
-                <path d="M12 17V12H9M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#C1D3FD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <svg class="absolute inset-0 -z-10  w-full h-14 my-auto object-none" xmlns="http://www.w3.org/2000/svg"
+                 width="200px" height="200px" viewBox="0 0 24 24" fill="none">
+                <path d="M12 17V12H9M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                      stroke="#C1D3FD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
 
             <p class="text-main_blue ">
@@ -299,10 +305,14 @@
         </div>
         <div class="h-24  border border-blue-400 w-64 text-center flex flex-col pt-1 relative isolate overflow-hidden">
 
-            <svg  class="absolute inset-0 -z-10  w-full h-14 my-auto object-none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" id="Layer_1" width="200px" height="200px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+            <svg class="absolute inset-0 -z-10  w-full h-14 my-auto object-none" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" id="Layer_1" width="200px" height="200px"
+                 viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
                 <g>
-                    <path fill="#C1D3FD" d="M43.416,35.812c-0.448-0.322-0.55-0.947-0.228-1.396c0.321-0.448,0.947-0.55,1.396-0.228L64,48.168V15.475   L32.597,38.803C32.419,38.935,32.21,39,32,39s-0.419-0.065-0.597-0.197L0,15.475v32.693l19.416-13.979   c0.449-0.321,1.073-0.22,1.396,0.228c0.322,0.448,0.221,1.073-0.228,1.396L0,50.632V52c0,2.211,1.789,4,4,4h56c2.211,0,4-1.789,4-4   v-1.368L43.416,35.812z"/>
-                    <path fill="#C1D3FD" d="M32,36.754l32-23.771V12c0-2.211-1.789-4-4-4H4c-2.211,0-4,1.789-4,4v0.982L32,36.754z"/>
+                    <path fill="#C1D3FD"
+                          d="M43.416,35.812c-0.448-0.322-0.55-0.947-0.228-1.396c0.321-0.448,0.947-0.55,1.396-0.228L64,48.168V15.475   L32.597,38.803C32.419,38.935,32.21,39,32,39s-0.419-0.065-0.597-0.197L0,15.475v32.693l19.416-13.979   c0.449-0.321,1.073-0.22,1.396,0.228c0.322,0.448,0.221,1.073-0.228,1.396L0,50.632V52c0,2.211,1.789,4,4,4h56c2.211,0,4-1.789,4-4   v-1.368L43.416,35.812z"/>
+                    <path fill="#C1D3FD"
+                          d="M32,36.754l32-23.771V12c0-2.211-1.789-4-4-4H4c-2.211,0-4,1.789-4,4v0.982L32,36.754z"/>
                 </g>
             </svg>
 
@@ -317,16 +327,28 @@
     </div>
 </div>
 
-<div class="section text-center mt-10">
-    <p class="text-xl text-main_blue">
+<div class="section mt-10">
+    <p class="text-xl text-main_blue text-center">
         Nuestra Ubicación
     </p>
-    <iframe class="mx-auto" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5870.868131024176!2d-102.1834905!3d17.9643697!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84315d002a607531%3A0xef13fb37cc9bc3aa!2sPATIO.IPL!5e1!3m2!1sen!2smx!4v1741752719932!5m2!1sen!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <div class="flex flex-wrap gap-x-5 justify-center">
+        <div class="bg-main_blue lg:w-2/6 w-full  text-center px-10 content-center h-128">
+            <p class="text-white font-medium">
+                Contamos con un patio de resguardo con ubicación estratégica, a solo
+                metros de ASIPONA, ideal para garantizar la seguridad y eficiencia en las operaciones logísticas</p>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2409.2373442259995!2d-102.18443358054728!3d17.964068062599008!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84315d17164869e5%3A0x7b9187c21dfb111f!2sTGN%20Logistics!5e1!3m2!1sen!2smx!4v1742258057014!5m2!1sen!2smx"
+                class="lg:w-3/6 h-128 w-full"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
 </div>
 <div class="content mt-10" id="servicios-link">
-    <div class="grid md:grid-cols-12 sm:grid-cols-2 lg:mr-10 gap-x-1">
+    <div class="grid md:grid-cols-12 sm:grid-cols-1 lg:mr-10 gap-x-1">
 
-        <div class="bg-main_blue md:col-span-6 sm:col-span-2 text-left">
+        <div class="bg-main_blue md:col-span-6  sm:col-span-1 text-left">
             <div class="h-132">
                 <div class="flex flex-row items-center h-full">
                     <div class="h-1/2 px-10">
@@ -351,7 +373,7 @@
 
             <div class="h-1/2 ">
                 <div class="flip-card">
-                    <div class="flip-card-inner top-136 lg:top-0">
+                    <div class="flip-card-inner top-136 md:top-0 lg:top-0">
                         <div class="flip-card-front  px-5">
                             <div class="bg-gray-100  shadow-lg rounded overflow-hidden h-64">
                                 <div class="items-center flex flex-col">
@@ -366,7 +388,7 @@
                                 <div class="px-6 py-4 items-center text-center">
                                     <div class="font-bold text-2xl mb-2">Servicios</div>
                                     <p class="text-gray-700 text-base font-bold">
-                                      Consolidación Desconsolidación
+                                        Consolidación Desconsolidación
                                     </p>
                                 </div>
                             </div>
@@ -389,10 +411,9 @@
                 </div>
             </div>
 
-
             <div class="h-1/2 ">
                 <div class="flip-card">
-                    <div class="flip-card-inner top-72 lg:top-0">
+                    <div class="flip-card-inner top-72 lg:top-0 md:top-0">
                         <div class="flip-card-front  px-5">
                             <div class="bg-gray-100  shadow-lg rounded overflow-hidden h-64 ">
                                 <div class="items-center flex flex-col">
@@ -767,7 +788,7 @@
                     </label>
                     <input class="shadow appearance-none border rounded w-full py-1 px-3
                     text-gray-700 leading-tight focus:outline-none focus:shadow-outline  focus:border-b-blue-300 focus:border-2"
-                           id="empresaInput" type="text" placeholder="xxx" />
+                           id="empresaInput" type="text" placeholder="xxx"/>
                     <div class="h-4">
                         <p class="text-red-600 text-sm hidden" id="inputWarningEmpresa">
                             Campo requerido
@@ -820,7 +841,6 @@
         </div>
     </div>
 </section>
-
 
 
 <div id="toast-simple" class="hidden flex items-center
