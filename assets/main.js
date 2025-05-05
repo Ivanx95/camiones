@@ -1,34 +1,3 @@
-let trucksSticky  = document.getElementsByClassName('sticky')[0];
-
-let trucksIncon1  = document.getElementsByTagName('svg')[0];
-let trucksIncon2  = document.getElementsByTagName('svg')[1];
-let trucksIncon3  = document.getElementsByTagName('svg')[2];
-// let  origOffsetY = trucksSticky.offsetTop;
-
-let allTrucks = [trucksIncon1,trucksIncon2,trucksIncon3];
-function convertRemToPixels(rem) {    
-    return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
-}
-
-function pixelToRem(px) {
-	return (px / (parseFloat(getComputedStyle(document.documentElement).fontSize))/2);
-}
-
-function isElementInViewport (el) {
-
-
-
-	var rect = el.getBoundingClientRect();
-
-	return (
-		rect.top >= 0 &&
-		rect.left >= 0 &&
-		rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /* or $(window).height() */
-		rect.right <= (window.innerWidth || document.documentElement.clientWidth) /* or $(window).width() */
-	);
-}
-
-
 
 
 let navBarMenu = document.querySelector("#navBarMenu")
@@ -39,16 +8,30 @@ let menuOptions = [...navBarMenu.children];
 let navBarActiveColor = 'bg-orange-500';
 let navBArActiveTextColor = 'text-white';
 let navBarSecoundaryTextColor = 'text-gray-400';
-let firstOption = menuOptions[0];
+
 
 menuOptions.forEach(e=>{
-	e.addEventListener('click',()=>{
-		setClass(navBarSecoundaryTextColor,firstOption);
-		menuOptions.forEach(e1=>resetClass(navBarActiveColor, e1));
-		setClass(navBarActiveColor,e);
-		menuOptions.forEach(e1=>resetClass(navBArActiveTextColor, e1));
-		setClass(navBArActiveTextColor,e);
+	e.addEventListener('click',(e1)=>{
+
+		menuOptions.forEach(e => e.classList.remove(navBarActiveColor,navBArActiveTextColor));
+		menuOptions.forEach(e => e.classList.add(navBarSecoundaryTextColor));
+
+		const source = event.target || event.srcElement;
+		source.classList.add("bg-orange-500","text-white");
+
 	});
 })
 
-console.log("Hi")
+
+if(window.location.hash) {
+	let hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
+
+	menuOptions.forEach(e => e.classList.remove(navBarActiveColor,navBArActiveTextColor));
+	menuOptions.forEach(e => e.classList.add(navBarSecoundaryTextColor));
+
+	let selectedSeciton =  document.querySelectorAll("[href*=\"#"+hash+"\"]")[1];
+	selectedSeciton.classList.add("bg-orange-500","text-white");
+	// hash found
+} else {
+	// No hash found
+}
