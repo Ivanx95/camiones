@@ -50,13 +50,13 @@
     </style>
 </head>
 <body class="m-0 p-0">
-<div id="cover"></div>
+<!--<div id="cover"></div>-->
 <script>
-    let cover = document.querySelector("#cover");
+    /*let cover = document.querySelector("#cover");
     window.addEventListener('load', function () {
         console.log("Page is fully loaded");
         document.body.removeChild(cover);
-    });
+    });*/
 
 </script>
 <script type="module" src="./assets/detect_function.mjs"></script>
@@ -119,7 +119,10 @@
 </script>
 <nav class="fixed bg-white w-full top-0 left-0 z-[100] ">
     <div class="flex flex-row">
-        <img class="object-scale-down w-40 mx-12 " src="assets/logo/logo_bueno.png" alt="Logitpo"/>
+
+        <a href="/">
+            <img class="object-scale-down w-40 mx-12 " src="assets/logo/logo_bueno.png" alt="Logitpo"/>
+        </a>
         <div class="sm:hidden ml-auto  inline-block align-middle pr-4 pt-2">
 
             <div class="hidden absolute w-56 right-16  z-10 mt-2 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
@@ -185,89 +188,8 @@
 </div>
 
 
-<div class="mt-5 w-full">
-    <div class="flex flex-wrap gap-x-5 px-5 place-content-center gap-y-4">
-        <div class="h-24  border border-blue-400 w-64 text-center flex flex-col gap-y-2 pt-5 relative isolate overflow-hidden">
 
-            <svg xmlns="http://www.w3.org/2000/svg" width="100px" height="50px" viewBox="0 0 24 24" fill="none"
-                 class="absolute inset-0 -z-10  w-full h-full  object-none h-16 my-auto">
-                <path d="M16.5562 12.9062L16.1007 13.359C16.1007 13.359 15.0181 14.4355 12.0631 11.4972C9.10812 8.55901 10.1907 7.48257 10.1907 7.48257L10.4775 7.19738C11.1841 6.49484 11.2507 5.36691 10.6342 4.54348L9.37326 2.85908C8.61028 1.83992 7.13596 1.70529 6.26145 2.57483L4.69185 4.13552C4.25823 4.56668 3.96765 5.12559 4.00289 5.74561C4.09304 7.33182 4.81071 10.7447 8.81536 14.7266C13.0621 18.9492 17.0468 19.117 18.6763 18.9651C19.1917 18.9171 19.6399 18.6546 20.0011 18.2954L21.4217 16.883C22.3806 15.9295 22.1102 14.2949 20.8833 13.628L18.9728 12.5894C18.1672 12.1515 17.1858 12.2801 16.5562 12.9062Z"
-                      fill="#C1D3FD"/>
-            </svg>
-
-            <p class="text-main_blue ">
-                Llamanos | Telefonos
-            </p>
-            <p class="text-gray-600 font-medium ">
-                +52-753-124-9010
-            </p>
-        </div>
-        <div class="h-24  border border-blue-400 w-64 text-center flex flex-col pt-1 relative isolate overflow-hidden">
-            <svg class="absolute inset-0 -z-10  w-full h-14 my-auto object-none" xmlns="http://www.w3.org/2000/svg"
-                 width="50px" height="50px"
-                 viewBox="0 0 24 24" fill="#C1D3FD"
-                 stroke="#C1D3FD"
-                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
-                <circle cx="12" cy="10" r="3" fill="white" stroke="white"></circle>
-            </svg>
-            <p class="text-main_blue">
-                Dirección
-            </p>
-            <p class="text-gray-600 font-medium mt-2 text-sm">
-                Av. Melchor Ocampo #447 int2.
-
-            </p>
-            <p class="text-gray-600 font-medium text-sm">
-                Col. Ejidal Lázaro Cárdenas Mich.
-
-            </p>
-        </div>
-        <div class="h-24  border border-blue-400 w-64 text-center flex flex-col pt-1 relative isolate overflow-hidden">
-
-            <svg class="absolute inset-0 -z-10  w-full h-14 my-auto object-none" xmlns="http://www.w3.org/2000/svg"
-                 width="200px" height="200px" viewBox="0 0 24 24" fill="none">
-                <path d="M12 17V12H9M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
-                      stroke="#C1D3FD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-
-            <p class="text-main_blue ">
-                Contactanos en los Horarios
-            </p>
-            <p class="text-gray-600 font-medium mt-2 text-sm">
-                De Lunes a Viernes
-
-            </p>
-            <p class="text-gray-600 font-medium text-sm">
-                de 8:30 a.m. a 6:30 p.m.
-
-            </p>
-        </div>
-        <div class="h-24  border border-blue-400 w-64 text-center flex flex-col pt-1 relative isolate overflow-hidden">
-
-            <svg class="absolute inset-0 -z-10  w-full h-14 my-auto object-none" xmlns="http://www.w3.org/2000/svg"
-                 xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" id="Layer_1" width="200px" height="200px"
-                 viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-                <g>
-                    <path fill="#C1D3FD"
-                          d="M43.416,35.812c-0.448-0.322-0.55-0.947-0.228-1.396c0.321-0.448,0.947-0.55,1.396-0.228L64,48.168V15.475   L32.597,38.803C32.419,38.935,32.21,39,32,39s-0.419-0.065-0.597-0.197L0,15.475v32.693l19.416-13.979   c0.449-0.321,1.073-0.22,1.396,0.228c0.322,0.448,0.221,1.073-0.228,1.396L0,50.632V52c0,2.211,1.789,4,4,4h56c2.211,0,4-1.789,4-4   v-1.368L43.416,35.812z"/>
-                    <path fill="#C1D3FD"
-                          d="M32,36.754l32-23.771V12c0-2.211-1.789-4-4-4H4c-2.211,0-4,1.789-4,4v0.982L32,36.754z"/>
-                </g>
-            </svg>
-
-            <p class="text-main_blue text-xl">
-                Cotiza via Email
-            </p>
-            <p class="text-gray-600 font-medium mt-2 text-sm">
-                contacto@tgnlogistics.com
-            </p>
-
-        </div>
-    </div>
-</div>
-
-<div class="relative isolate overflow-hidden bg-gray-900 mt-10">
+<div class="relative isolate overflow-hidden bg-gray-900">
 
     <div id="videoElementParent">
         <video id="videoElement"
@@ -283,16 +205,99 @@
 
         />
     </div>
+
+
+    <div class="w-full animate-fadeSlideInTop bg-white py-4">
+        <div class="flex flex-wrap gap-x-5 px-5 place-content-center gap-y-4 mb-5">
+            <div class="h-24  border border-blue-400 w-64 text-center flex flex-col gap-y-2 pt-5 relative isolate overflow-hidden">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="100px" height="50px" viewBox="0 0 24 24" fill="none"
+                     class="absolute inset-0 -z-10  w-full h-full  object-none h-16 my-auto">
+                    <path d="M16.5562 12.9062L16.1007 13.359C16.1007 13.359 15.0181 14.4355 12.0631 11.4972C9.10812 8.55901 10.1907 7.48257 10.1907 7.48257L10.4775 7.19738C11.1841 6.49484 11.2507 5.36691 10.6342 4.54348L9.37326 2.85908C8.61028 1.83992 7.13596 1.70529 6.26145 2.57483L4.69185 4.13552C4.25823 4.56668 3.96765 5.12559 4.00289 5.74561C4.09304 7.33182 4.81071 10.7447 8.81536 14.7266C13.0621 18.9492 17.0468 19.117 18.6763 18.9651C19.1917 18.9171 19.6399 18.6546 20.0011 18.2954L21.4217 16.883C22.3806 15.9295 22.1102 14.2949 20.8833 13.628L18.9728 12.5894C18.1672 12.1515 17.1858 12.2801 16.5562 12.9062Z"
+                          fill="#C1D3FD"/>
+                </svg>
+
+                <p class="text-main_blue ">
+                    Llamanos | Telefonos
+                </p>
+                <p class="text-gray-600 font-medium ">
+                    +52-753-124-9010
+                </p>
+            </div>
+            <div class="h-24  border border-blue-400 w-64 text-center flex flex-col pt-1 relative isolate overflow-hidden">
+                <svg class="absolute inset-0 -z-10  w-full h-14 my-auto object-none" xmlns="http://www.w3.org/2000/svg"
+                     width="50px" height="50px"
+                     viewBox="0 0 24 24" fill="#C1D3FD"
+                     stroke="#C1D3FD"
+                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+                    <circle cx="12" cy="10" r="3" fill="white" stroke="white"></circle>
+                </svg>
+                <p class="text-main_blue">
+                    Dirección
+                </p>
+                <p class="text-gray-600 font-medium mt-2 text-sm">
+                    Av. Melchor Ocampo #447 int2.
+
+                </p>
+                <p class="text-gray-600 font-medium text-sm">
+                    Col. Ejidal Lázaro Cárdenas Mich.
+
+                </p>
+            </div>
+            <div class="h-24  border border-blue-400 w-64 text-center flex flex-col pt-1 relative isolate overflow-hidden">
+
+                <svg class="absolute inset-0 -z-10  w-full h-14 my-auto object-none" xmlns="http://www.w3.org/2000/svg"
+                     width="200px" height="200px" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 17V12H9M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                          stroke="#C1D3FD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+
+                <p class="text-main_blue ">
+                    Contactanos en los Horarios
+                </p>
+                <p class="text-gray-600 font-medium mt-2 text-sm">
+                    De Lunes a Viernes
+
+                </p>
+                <p class="text-gray-600 font-medium text-sm">
+                    de 8:30 a.m. a 6:30 p.m.
+
+                </p>
+            </div>
+            <div class="h-24  border border-blue-400 w-64 text-center flex flex-col pt-1 relative isolate overflow-hidden">
+
+                <svg class="absolute inset-0 -z-10  w-full h-14 my-auto object-none" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" id="Layer_1" width="200px" height="200px"
+                     viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                <g>
+                    <path fill="#C1D3FD"
+                          d="M43.416,35.812c-0.448-0.322-0.55-0.947-0.228-1.396c0.321-0.448,0.947-0.55,1.396-0.228L64,48.168V15.475   L32.597,38.803C32.419,38.935,32.21,39,32,39s-0.419-0.065-0.597-0.197L0,15.475v32.693l19.416-13.979   c0.449-0.321,1.073-0.22,1.396,0.228c0.322,0.448,0.221,1.073-0.228,1.396L0,50.632V52c0,2.211,1.789,4,4,4h56c2.211,0,4-1.789,4-4   v-1.368L43.416,35.812z"/>
+                    <path fill="#C1D3FD"
+                          d="M32,36.754l32-23.771V12c0-2.211-1.789-4-4-4H4c-2.211,0-4,1.789-4,4v0.982L32,36.754z"/>
+                </g>
+            </svg>
+
+                <p class="text-main_blue text-xl">
+                    Cotiza via Email
+                </p>
+                <p class="text-gray-600 font-medium mt-2 text-sm">
+                    contacto@tgnlogistics.com
+                </p>
+
+            </div>
+        </div>
+    </div>
+
     <div class="md:col-span-5 sm:col-span-2 lg:text-left text-center lg:ml-36 mx-auto lg:mt-24 mt-10 h-full w-1/2 mx-auto">
             <span class="text-orange-500 white-text-shadow lg:text-6xl md:text-4xl text-2xl font-bold">
                 Bienvenido a
             </span>
         <img class="object-scale-down w-40 mt-2 mx-auto lg:mx-0" src="assets/logo/logo_bueno.png" alt="Logitpo"/>
     </div>
-    <div class="lg:w-3/5  w-4/5 text-left lg:ml-36 mx-auto lg:my-10 animate-particleEffect">
-        <p class="lg:text-xl sm:text-sm text-white lg:font-medium font-light text-justify ">
-            Empresa líder en soluciones logísticas, especializada en el transporte.
-            Logística inteligente para un mundo en movimiento.
+    <div class="lg:w-3/5  w-4/5 text-left lg:ml-36 mx-auto lg:my-10 animate-particleEffect ">
+        <p class="lg:text-xl sm:text-sm text-white lg:font-bold font-light text-justify text-shadow-md">
+          LOGISTICA PARA UN MUNDO EN MOVIMIENTO
         </p>
     </div>
 
@@ -332,7 +337,7 @@
 
 
 <div class="section mt-10">
-    <p class="text-xl text-main_blue text-center">
+    <p class="text-xl text-main_blue text-center text-shadow-md">
         Nuestra Ubicación
     </p>
 
@@ -382,11 +387,40 @@
                             <div class="bg-gray-100  shadow-lg rounded overflow-hidden h-64">
                                 <div class="items-center flex flex-col">
                                     <div class="bg-main_blue rounded-full w-50">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="150px"
-                                             height="150px"
-                                             viewBox="0 -8 72 72" id="Layer_1" data-name="Layer 1">
-                                            <path d="M55.81,44.35V36.41a3.09,3.09,0,0,0-3.09-3.09h-.81v-29a.8.8,0,0,0-.34-.65l-2-1.29A.77.77,0,0,0,48.41,3v9.32l-.59-1.58a5.42,5.42,0,0,0-5.07-3.53H29.24a5.43,5.43,0,0,0-5.09,3.56l-.56,1.55V3a.77.77,0,0,0-1.19-.64l-2,1.29a.8.8,0,0,0-.34.65v29h-.81a3.09,3.09,0,0,0-3.09,3.09v7.94H14.87a.77.77,0,0,0-.77.77V49.4a.77.77,0,0,0,.77.77H18.2v2a1.55,1.55,0,0,0,1.55,1.54h4.1a1.54,1.54,0,0,0,1.54-1.54v-2H46.61v2a1.54,1.54,0,0,0,1.54,1.54h4.1a1.55,1.55,0,0,0,1.55-1.54v-2h3.33a.77.77,0,0,0,.77-.77V45.12a.77.77,0,0,0-.77-.77ZM24.62,16.63H47.38v7.62H24.62Zm-.53,25.56H21.45A1.46,1.46,0,0,1,20,40.73v0a1.46,1.46,0,0,1,1.46-1.46h2.64a1.46,1.46,0,0,1,1.46,1.46v0A1.46,1.46,0,0,1,24.09,42.19Zm17.16.43H30.75a1.54,1.54,0,0,1-1.55-1.55V31.28a1.54,1.54,0,0,1,1.55-1.54h10.5a1.54,1.54,0,0,1,1.55,1.54v9.79A1.54,1.54,0,0,1,41.25,42.62Zm9.3-.43H47.91a1.46,1.46,0,0,1-1.46-1.46v0a1.46,1.46,0,0,1,1.46-1.46h2.64A1.46,1.46,0,0,1,52,40.69v0A1.46,1.46,0,0,1,50.55,42.19ZM41,35.39H31a.76.76,0,0,1-.77-.76v0a.76.76,0,0,1,.77-.76H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,35.39Zm0-3.09H31a.76.76,0,0,1-.77-.76v0a.76.76,0,0,1,.77-.76H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,32.3Zm0,9.27H31a.76.76,0,0,1-.77-.76v0A.76.76,0,0,1,31,40H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,41.57Zm0-3.09H31a.76.76,0,0,1-.77-.76v0a.76.76,0,0,1,.77-.76H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,38.48Z"></path>
+
+
+                                        <svg width="150px" height="150px" xmlns="http://www.w3.org/2000/svg" baseprofile="tiny" fill="#040c4c" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5" version="1.2" viewbox="-6 -7 140 140" >
+                                            <g id="Layer_1">
+                                                <title>Layer 1</title>
+                                                <rect stroke="#ffffff" rx="4" id="svg_1" height="14.1739" width="95.77507" y="83.29789" x="2.32844" stroke-width="2" fill="#ffffff"/>
+                                                <rect rx="4" id="svg_2" height="7.49192" width="35.02978" y="86.63888" x="11.03527" fill="#23256f" opacity="0.9" stroke="null"/>
+                                                <rect rx="4" id="svg_5" height="7.49192" width="35.02978" y="86.63888" x="53.55697" fill="#23256f" opacity="0.9" stroke="#23256f"/>
+                                                <rect rx="3" id="svg_9" height="6.68198" width="13.97142" y="86.94261" x="98.05088" stroke-width="2" fill="#ffffff" stroke="#ffffff"/>
+                                                <path id="svg_10" d="m105.38232,87.73178l1.36255,-8.48184l4.54184,0l1.36255,8.48184l-7.26694,0l0,0z" stroke-width="2" fill="#ffffff" stroke="#ffffff"/>
+                                                <rect rx="4" id="svg_13" height="25.50172" width="25.50172" y="55.69676" x="9.7189" fill="#ffffff"/>
+                                                <rect id="svg_14" height="9.51739" width="9.27335" y="54.90489" x="17.83308" stroke-width="2" fill="#ffffff" stroke="#23256f"/>
+                                                <rect rx="4" id="svg_18" height="25.50172" width="25.50172" y="55.69676" x="38.0667" fill="#ffffff"/>
+                                                <rect id="svg_19" height="9.51739" width="9.27335" y="54.90489" x="46.18089" stroke-width="2" fill="#ffffff" stroke="#23256f"/>
+                                                <rect rx="4" id="svg_21" height="25.50172" width="25.50172" y="55.30461" x="66.07703" fill="#ffffff"/>
+                                                <rect id="svg_22" height="9.51739" width="9.27335" y="54.90489" x="74.19122" stroke-width="2" fill="#ffffff" stroke="#23256f"/>
+                                                <rect rx="4" id="svg_24" height="25.50172" width="25.50172" y="27.34896" x="9.88764" fill="#ffffff"/>
+                                                <rect id="svg_25" height="9.51739" width="9.27335" y="26.55709" x="18.00182" stroke-width="2" fill="#ffffff" stroke="#23256f"/>
+                                                <rect rx="4" id="svg_27" height="25.50172" width="25.50172" y="27.34897" x="38.23544" fill="#ffffff"/>
+                                                <rect id="svg_28" height="9.51739" width="9.27335" y="26.21217" x="46.34962" stroke-width="2" fill="#ffffff" stroke="#23256f"/>
+                                                <rect rx="4" id="svg_30" height="25.50172" width="25.50172" y="27.34897" x="66.07703" fill="#ffffff"/>
+                                                <rect id="svg_31" height="9.51739" width="9.27335" y="26.55709" x="74.19122" stroke-width="2" fill="#ffffff" stroke="#23256f"/>
+                                                <rect id="svg_35" height="28.78169" width="5.10813" y="38.08604" x="114.70347" fill="#ffffff" stroke="#ffffff"/>
+                                                <rect rx="5" id="svg_37" height="17.45166" width="8.8248" y="12.18366" x="128.50664" fill="#ffffff" stroke-width="2" transform="matrix(0.87902 -0.030696 0.030696 0.87902 -0.27094 18.3084)" stroke="#23256f"/>
+                                                <path id="svg_38" d="m119.47704,65.86596l-0.04692,11.39169l0,0c-0.02015,4.89335 -3.07187,8.8477 -6.81619,8.83228l0,0l0,0l0.02085,-5.06297l0,0c1.60471,0.00661 2.91259,-1.68811 2.92123,-3.78526l0.04692,-11.39169l3.87411,0.01596l0,-0.00001z" opacity="NaN" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+                                            </g>
                                         </svg>
+                                        <!--<object data="./assets/svg/tarima.svg" type="" width="150px" height="150px"></object>
+
+                                         <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="150px"
+                                              height="150px"
+                                              viewBox="0 -8 72 72" id="Layer_1" data-name="Layer 1">
+                                             <path d="M55.81,44.35V36.41a3.09,3.09,0,0,0-3.09-3.09h-.81v-29a.8.8,0,0,0-.34-.65l-2-1.29A.77.77,0,0,0,48.41,3v9.32l-.59-1.58a5.42,5.42,0,0,0-5.07-3.53H29.24a5.43,5.43,0,0,0-5.09,3.56l-.56,1.55V3a.77.77,0,0,0-1.19-.64l-2,1.29a.8.8,0,0,0-.34.65v29h-.81a3.09,3.09,0,0,0-3.09,3.09v7.94H14.87a.77.77,0,0,0-.77.77V49.4a.77.77,0,0,0,.77.77H18.2v2a1.55,1.55,0,0,0,1.55,1.54h4.1a1.54,1.54,0,0,0,1.54-1.54v-2H46.61v2a1.54,1.54,0,0,0,1.54,1.54h4.1a1.55,1.55,0,0,0,1.55-1.54v-2h3.33a.77.77,0,0,0,.77-.77V45.12a.77.77,0,0,0-.77-.77ZM24.62,16.63H47.38v7.62H24.62Zm-.53,25.56H21.45A1.46,1.46,0,0,1,20,40.73v0a1.46,1.46,0,0,1,1.46-1.46h2.64a1.46,1.46,0,0,1,1.46,1.46v0A1.46,1.46,0,0,1,24.09,42.19Zm17.16.43H30.75a1.54,1.54,0,0,1-1.55-1.55V31.28a1.54,1.54,0,0,1,1.55-1.54h10.5a1.54,1.54,0,0,1,1.55,1.54v9.79A1.54,1.54,0,0,1,41.25,42.62Zm9.3-.43H47.91a1.46,1.46,0,0,1-1.46-1.46v0a1.46,1.46,0,0,1,1.46-1.46h2.64A1.46,1.46,0,0,1,52,40.69v0A1.46,1.46,0,0,1,50.55,42.19ZM41,35.39H31a.76.76,0,0,1-.77-.76v0a.76.76,0,0,1,.77-.76H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,35.39Zm0-3.09H31a.76.76,0,0,1-.77-.76v0a.76.76,0,0,1,.77-.76H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,32.3Zm0,9.27H31a.76.76,0,0,1-.77-.76v0A.76.76,0,0,1,31,40H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,41.57Zm0-3.09H31a.76.76,0,0,1-.77-.76v0a.76.76,0,0,1,.77-.76H41a.76.76,0,0,1,.76.76v0A.76.76,0,0,1,41,38.48Z"></path>
+                                         </svg>-->
                                     </div>
                                 </div>
                                 <div class="px-6 py-4 items-center text-center">
