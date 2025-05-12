@@ -6,7 +6,7 @@
 {
     #ship {
         animation-name: moveShip;
-        animation-duration: 5s;
+        animation-duration: 10s;
         animation-iteration-count: infinite;
     }
 }
@@ -15,7 +15,7 @@
 {
     #ship {
         animation-name: moveShipBig;
-        animation-duration: 10s;
+        animation-duration: 15s;
         animation-iteration-count: infinite;
     }
 }
@@ -23,13 +23,13 @@
 
 @keyframes moveShip {
     from {margin-left: 16rem;}
-    to {margin-left: 1rem;}
+    to {margin-left: -25px;}
 }
 
 
 @keyframes moveShipBig {
     from {margin-left: 32rem;}
-    to {margin-left: 1rem;}
+    to {margin-left: -25px;}
 }
 
 
