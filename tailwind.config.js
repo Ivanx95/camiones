@@ -1,16 +1,16 @@
 import {animations} from './assets/animation.config.mjs';
 
 module.exports = {
-    content: ["./*.{html,js}"],
+    content: ["./*.{html,js}","./assets/*.{html,js}"],
     important: true,
     theme: {
 
         extend: {
             colors: {
-                main_blue: '#23256f',
+                main_blue: '#040c4c',
                 light_blue:'#2596be',
                 strong_orange: '#f4340c',
-                main_orange: '#ff7414'
+                main_orange: '#ff7414',
             },
             backgroundImage: {
                 striped: 'linear-gradient(90deg, #040c4c 70%, rgb(229 231 235 ) 30%)',

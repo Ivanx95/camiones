@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: Roboto;
+        font-weight: 400;
+        src: url(./assets/fonts/roboto-regular.woff2) format("woff");
+    }
+}
+
+.glass {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, .2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.8px);
+    -webkit-backdrop-filter: blur(1.8px);
+}
+
+.glass:hover {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, .6);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.8px);
+    -webkit-backdrop-filter: blur(1.8px);
+}
+
+.glass::selection {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, .2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.8px);
+    -webkit-backdrop-filter: blur(1.8px);
+}
+
+html *
+{
+    font-family: Roboto, serif !important;
+}
+
+.insta{
+ background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%) !important;
+}
