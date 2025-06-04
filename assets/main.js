@@ -5,7 +5,7 @@ let navBarMenu = document.querySelector("#navBarMenu")
 let menuOptions = [...navBarMenu.children];
 
 
-let navBarActiveColor = 'bg-orange-500';
+let navBarActiveColor = 'bg-main_blue';
 let navBArActiveTextColor = 'text-white';
 let navBarSecoundaryTextColor = 'text-gray-400';
 
@@ -17,7 +17,7 @@ menuOptions.forEach(e=>{
 		menuOptions.forEach(e => e.classList.add(navBarSecoundaryTextColor));
 
 		const source = event.target || event.srcElement;
-		source.classList.add("bg-orange-500","text-white");
+		source.classList.add("bg-main_blue","text-white");
 
 	});
 })
@@ -30,7 +30,7 @@ if(window.location.hash) {
 	menuOptions.forEach(e => e.classList.add(navBarSecoundaryTextColor));
 
 	let selectedSeciton =  document.querySelectorAll("[href*=\"#"+hash+"\"]")[1];
-	selectedSeciton.classList.add("bg-orange-500","text-white");
+	selectedSeciton.classList.add("bg-main_blue","text-white");
 	// hash found
 } else {
 	// No hash found

@@ -26,7 +26,8 @@ module.exports = {
                 fadeSlideIn : 'fadeSlideIn 1s linear',
                 fadeSlideInTop : 'fadeSlideInTop 1s linear',
                 fadeSlideInBottom : 'fadeSlideInBottom 1s linear',
-                particleEffect : 'particleEffect .3s linear'
+                particleEffect : 'particleEffect .3s linear',
+                zoomInRight: 'zoomInRight 1.25s linear'
             },
             listStyleImage: {
                 checkmark: 'url("/assets/checkmark.jpeg")',

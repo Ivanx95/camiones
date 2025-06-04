@@ -71,6 +71,22 @@ export const animations = {
         '100%': {filter: "blur(0px)"},
     }
     ,
+    zoomInRight:{
+        '0%':{
+            transform: 'scale3d(.1,.1,.1) translate3d(1000px,0,0)',
+            timing: 'cubic-bezier(0.55,0.055,0.675,0.19);',
+            opacity: 0,
+
+
+           },
+        '60%':{
+            transform: 'scale3d(.475,.475,.475) translate3d(-10px,0,0)',
+            timing: 'cubic-bezier(0.175,0.885,0.32,1)',
+            opacity: 1,
+        }
+
+    }
+    ,
     bounceIn: {
         '20%,40%,60%,80%,from,to': {
             timing: 'cubic-bezier(0.95, 0.05, 0.795, 0.035)'
